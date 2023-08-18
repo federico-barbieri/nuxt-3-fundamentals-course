@@ -35,6 +35,7 @@ header{
     background-color: var(--primary-blue);
     background-color: var(--dark-slate);
     color: var(--near-white);
+    font-family: "Roboto", sans-serif;
 }
 
 nav{
@@ -44,6 +45,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 nav > ul{
@@ -65,6 +67,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Roboto", sans-serif;
 }
 
 </style>

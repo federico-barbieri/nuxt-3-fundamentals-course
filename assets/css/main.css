@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
     --primary-blue: #1A237E;
     --vibrant-teal: #00BFA5;
@@ -7,3 +9,4 @@
     --dark-slate: #263238;
     --near-white: #F5F5F5;
   }
+
