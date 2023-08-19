@@ -6,20 +6,21 @@
             <section class="hero">
 
                 <h1><span class="federico">FEDERICO</span> <span class="barbieri">BARBIERI</span></h1>
-                <span class="frontend-developer">FRONTEND DEVELOPER</span>
+                <span class="frontend-developer">BETWEEN TWO HEMISPHERES</span>
 
             </section>
 
             <section class="about">
 
-                <h2 class="about-title">ABOUT</h2>
+                <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
                 <p class="about-p">Student, bla bla, background, internship, tools and technologies</p>
 
             </section>
 
             <section class="projects">
-                <h2 class="projects-title">PROJECTS</h2>
                 <p>Check a selection of projects I've been working on over the past year</p>
+                <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
+                
             </section>
 
             <section class="contact">
@@ -40,6 +41,14 @@
 </script>
 
 <style scoped>
+
+a{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
 
 /* MAIN */
 
@@ -63,7 +72,7 @@ main{
     justify-content: center;
     height: 85vh;
     width: 100vw;
-
+    border: 10px solid red;
 }
 
 h1{
@@ -85,25 +94,31 @@ h1{
 
 .frontend-developer{
     font-size: 1.5rem;
+    display: block;
+    margin: 3rem auto;
 }
 
 h2{
-    font-size: 18rem;
+    font-size: 15rem;
+    opacity: 0.3;
 }
 
 /* ABOUT */
 
 .about{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 85vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
     width: 100%;
+    border: 10px solid green;
+
 }
 
 .about-title{
-    text-decoration: overline;
+    writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
+    text-orientation: upright; /* characters are upright */
 }
 
 .about-p{
@@ -118,15 +133,16 @@ h2{
 
 .projects{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    height: 85vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
     width: 100%;
 }
 
 .projects-title{
-    text-decoration: underline;
+    writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
+    text-orientation: upright; /* characters are upright */
 }
 
 /* CONTACT */
@@ -134,13 +150,14 @@ h2{
 .contact{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     height: 85vh;
     width: 100%;
 }
 
 .contact-title{
+    
     text-decoration: overline;
 }
 

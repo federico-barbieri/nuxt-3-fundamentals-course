@@ -1,6 +1,6 @@
 <template>
     <div>
-        whats going on
+        I AM DEFINITELY THE ABOUT PAGE
 
         <nuxt-link to="/"> bacvk to index</nuxt-link>
 

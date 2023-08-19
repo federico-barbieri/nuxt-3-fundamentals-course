@@ -1,5 +1,8 @@
 <template>
     <div>
+        I AM THE PROJECTS PAGE
+
+        <nuxt-link to="/"> bacvk to index</nuxt-link>
 
     </div>
 </template>
