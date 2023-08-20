@@ -2,10 +2,10 @@
     <div>
     <header>
         <nav>
-            <span>LOGO HERE</span>
+            <span><nuxt-link to="/">LOGO</nuxt-link></span>
             <ul>
-                <li>ABOUT</li>
-                <li>PROJECTS</li>
+                <li><nuxt-link to="/about">ABOUT</nuxt-link></li>
+                <li><nuxt-link to="/projects">PROJECTS</nuxt-link></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +27,16 @@ export default {
 </script>
 
 <style scoped>
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+    text-decoration: none;
+}
 
 
 header{
