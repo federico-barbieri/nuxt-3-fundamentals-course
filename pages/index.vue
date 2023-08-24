@@ -14,14 +14,20 @@
 
                 <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
                 <p class="about-p">
-                    I'm a Frontend artist with a background in advertising.
+                    I'm a Frontend Developer with a background in advertising.
 
                 </p>
 
             </section>
 
             <section class="projects">
+                
                 <p>Check a selection of projects I've been working on over the past year</p>
+                <ul class="project-list">
+                    <li class="project-title">Messiverse</li>
+                    <li class="project-title">SwampFest</li>
+                    <li class="project-title">Magic Hackers</li>
+                </ul>
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
                 
             </section>
@@ -146,6 +152,11 @@ h2{
 .projects-title{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
+}
+
+/* list of projects */
+.project-list{
+    list-style-type: none;
 }
 
 /* CONTACT */

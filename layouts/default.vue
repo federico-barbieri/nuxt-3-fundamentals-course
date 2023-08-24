@@ -68,6 +68,15 @@ nav > ul{
     list-style-type: none;
 }
 
+ul > li {
+    transition: all 0.5s ease-in;
+}
+
+ul > li:hover {
+    transition: all 0.5s ease-in;
+    text-decoration: underline;
+}
+
 footer{
     width: 100vw;
     height: 15vh;
