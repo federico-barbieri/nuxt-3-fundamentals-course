@@ -14,7 +14,7 @@
 
                 <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
                 <p class="about-p">
-                    I'm a Frontend Developer with a background in advertising.
+                    I'm a Frontend artist with a background in advertising.
 
                 </p>
 
