@@ -27,6 +27,7 @@
                     <li class="project-title">Messiverse</li>
                     <li class="project-title">SwampFest</li>
                     <li class="project-title">Magic Hackers</li>
+                    <li class="project-title">Jimmy Sakurai</li>
                 </ul>
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
                 
