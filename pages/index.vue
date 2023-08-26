@@ -23,11 +23,13 @@
             <section class="projects">
                 
                 <p>Check a selection of projects I've been working on over the past year</p>
+                
                 <ul class="project-list">
-                    <li class="project-title">Messiverse</li>
-                    <li class="project-title">SwampFest</li>
-                    <li class="project-title">Magic Hackers</li>
-                    <li class="project-title">Jimmy Sakurai</li>
+                    <ProjectCard name="Messiverse" description="a cool project" />
+                    <ProjectCard name="Magic Hackers" description="a cool project" />
+                    <ProjectCard name="Jimmy Sakurai" description="a cool project" />
+                    <ProjectCard name="SwampFest" description="a cool project" />
+                    
                 </ul>
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
                 
@@ -47,6 +49,8 @@
 </template>
 
 <script setup>
+
+import ProjectCard from "../components/ProjectCard.vue"
 
 </script>
 
