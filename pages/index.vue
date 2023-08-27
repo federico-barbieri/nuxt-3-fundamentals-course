@@ -29,6 +29,7 @@
                     <ProjectCard name="Magic Hackers" description="a cool project" />
                     <ProjectCard name="Jimmy Sakurai" description="a cool project" />
                     <ProjectCard name="SwampFest" description="a cool project" />
+
                     
                 </ul>
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>

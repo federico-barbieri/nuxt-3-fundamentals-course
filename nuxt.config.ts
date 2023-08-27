@@ -5,6 +5,10 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: [
-    '@/assets/css/main.css'
+    '@/assets/css/main.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
+  plugins: [
+    '~/plugins/fontawesome.js',
   ],
 })
