@@ -21,17 +21,25 @@
             </section>
 
             <section class="projects">
+
+                <div class="p-and-ul">
+
+                    <p>Check a selection of projects I've been working on over the past year</p>
                 
-                <p>Check a selection of projects I've been working on over the past year</p>
-                
-                <ul class="project-list">
-                    <ProjectCard name="Messiverse" description="a cool project" />
-                    <ProjectCard name="Magic Hackers" description="a cool project" />
-                    <ProjectCard name="Jimmy Sakurai" description="a cool project" />
-                    <ProjectCard name="SwampFest" description="a cool project" />
+                    <ul class="project-list">
+                    <ProjectCard name="Messiverse" description="a cool project" img="" />
+                    <ProjectCard name="Magic Hackers" description="a cool project" img="castle" />
+                    <ProjectCard name="Jimmy Sakurai" description="a cool project" img="" />
+                    <ProjectCard name="SwampFest" description="a cool project" img="" />
 
                     
                 </ul>
+
+
+
+                </div>
+                
+               
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
                 
             </section>
@@ -52,6 +60,13 @@
 <script setup>
 
 import ProjectCard from "../components/ProjectCard.vue"
+
+import ecd from "../assets/projectImgs/ecd.jpg"
+import hogwarts from "../assets/projectImgs/hogwarts.png"
+import sakurai from "../assets/projectImgs/moon.png"
+import shrek from "../assets/projectImgs/shrek.jpg"
+
+const castle = hogwarts;
 
 </script>
 
@@ -158,6 +173,15 @@ h2{
 .projects-title{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
+    width: 30%;
+    border: 1px solid green;
+}
+
+.p-and-ul{
+    width: 70%;
+    border: 1px solid yellow;
+    height: 100%;
+    text-align: center;
 }
 
 /* list of projects */

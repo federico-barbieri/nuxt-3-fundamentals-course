@@ -1,10 +1,26 @@
 <template>
     <div class="project-card">
-       
-        <h3>{{ name }}</h3>
+
+        <div>
+            <div>
+                <img :src="img" alt="">
+            </div>
+        </div>
+
+        <div class="text-side">
+
+            <h3>{{ name }}</h3>
       
     
-        <p>{{ description }}</p>
+            <p>{{ description }}</p>
+
+            <div class="project-code">
+            
+            </div>
+
+        </div>
+       
+       
 
     </div>
 </template>
@@ -14,16 +30,19 @@
 
 const props = defineProps({
   name: String,
-  description: String
+  description: String,
+  img: String 
 });
+
+
 
 </script>
 
 <style scoped>
 
 .project-card{
-    width: 15rem;
-    height: 15rem;
+    width: 100%;
+    height: 30rem;
     border: 2px solid red;
     color: white;
 }
