@@ -27,8 +27,8 @@
                     <p>Check a selection of projects I've been working on over the past year</p>
                 
                     <ul class="project-list">
-                    <ProjectCard name="Messiverse" description="a cool project" img="" />
-                    <ProjectCard name="Magic Hackers" description="a cool project" img="castle" />
+                    <ProjectCard name="Messiverse" description="a cool project" img="/images/hogwarts.png" />
+                    <ProjectCard name="Magic Hackers" description="a cool project" img="" />
                     <ProjectCard name="Jimmy Sakurai" description="a cool project" img="" />
                     <ProjectCard name="SwampFest" description="a cool project" img="" />
 
@@ -61,12 +61,6 @@
 
 import ProjectCard from "../components/ProjectCard.vue"
 
-import ecd from "../assets/projectImgs/ecd.jpg"
-import hogwarts from "../assets/projectImgs/hogwarts.png"
-import sakurai from "../assets/projectImgs/moon.png"
-import shrek from "../assets/projectImgs/shrek.jpg"
-
-const castle = hogwarts;
 
 </script>
 

@@ -3,7 +3,7 @@
 
         <div>
             <div>
-                <img :src="img" alt="">
+                <img :src="img" alt="hola">
             </div>
         </div>
 
@@ -27,6 +27,8 @@
 
 <script setup>
 
+const pic = "/images/ecd.jpg"
+
 
 const props = defineProps({
   name: String,
@@ -49,6 +51,11 @@ const props = defineProps({
 
 h3{
     font-size: 2rem;
+}
+
+img{
+    width: 10rem;
+    height: 10rem;
 }
 
 </style>
