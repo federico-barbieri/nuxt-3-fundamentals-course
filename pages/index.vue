@@ -27,13 +27,14 @@
                     <p>Check a selection of projects I've been working on over the past year</p>
                 
                     <ul class="project-list">
+                    
                     <ProjectCard name="Messiverse" description="a cool project" img="/images/hogwarts.png" />
                     <ProjectCard name="Magic Hackers" description="a cool project" img="" />
                     <ProjectCard name="Jimmy Sakurai" description="a cool project" img="" />
                     <ProjectCard name="SwampFest" description="a cool project" img="" />
 
                     
-                </ul>
+                    </ul>
 
 
 
