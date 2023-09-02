@@ -14,6 +14,7 @@
                     <ProjectCard class="hackers" name="Magic Hackers" v-if="kea" description="a cool project" img="" />
                     <ProjectCard class="sakurai" name="Jimmy Sakurai" v-if="personal" description="a cool project" img="" />
                     <ProjectCard class="swampfest" name="SwampFest" v-if="kea" description="a cool project" img="" />
+                    <ProjectCard class="bikini" name="CPH Cartel" v-if="kea" description="a cool project" img="" />
 
                     
                     </ul>
@@ -66,6 +67,10 @@ function toggleAll(){
 
 .swampfest{
     background-color: saddlebrown;
+}
+
+.bikini{
+    background-color: yellow;
 }
 
 </style>
