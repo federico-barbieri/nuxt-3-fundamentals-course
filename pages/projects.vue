@@ -10,11 +10,11 @@
                     <button @click="togglePersonal">PERSONAL PROJECTS</button>
                     <button @click="toggleAll">ALL PROJECTS</button>
                     
-                    <ProjectCard class="messiverse" v-if="kea" name="Messiverse" description="a cool project" img="/images/hogwarts.png" />
-                    <ProjectCard class="hackers" name="Magic Hackers" v-if="kea" description="a cool project" img="" />
-                    <ProjectCard class="sakurai" name="Jimmy Sakurai" v-if="personal" description="a cool project" img="" />
-                    <ProjectCard class="swampfest" name="SwampFest" v-if="kea" description="a cool project" img="" />
-                    <ProjectCard class="bikini" name="CPH Cartel" v-if="kea" description="a cool project" img="" />
+                    <ProjectCard class="messiverse" v-if="kea" name="Messiverse" description="A multiverse of Messis" img="/images/hogwarts.png" />
+                    <ProjectCard class="hackers" name="Magic Hackers" v-if="kea" description="A dashboard for Dumbledore" img="" />
+                    <ProjectCard class="sakurai" name="Jimmy Sakurai" v-if="personal" description="A tribute to a great guitar player" img="" />
+                    <ProjectCard class="swampfest" name="SwampFest" v-if="kea" description="The best festival in the world" img="" />
+                    <ProjectCard class="bikini" name="CPH Cartel" v-if="kea" description="An immersive experience" img="" />
 
                     
                     </ul>

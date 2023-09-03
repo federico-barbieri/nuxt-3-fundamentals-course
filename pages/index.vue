@@ -97,7 +97,6 @@ main{
     justify-content: center;
     height: 85vh;
     width: 100vw;
-    border: 10px solid red;
 }
 
 h1{
@@ -137,7 +136,6 @@ h2{
     justify-content: space-around;
     height: auto;
     width: 100%;
-    border: 10px solid green;
 
 }
 
@@ -169,12 +167,10 @@ h2{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
     width: 30%;
-    border: 1px solid green;
 }
 
 .p-and-ul{
     width: 70%;
-    border: 1px solid yellow;
     height: 100%;
     text-align: center;
 }
