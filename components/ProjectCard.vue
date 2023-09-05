@@ -2,9 +2,9 @@
     <div class="project-card">
 
         <div>
-            <div>
-                <img :src="img" alt="hola">
-            </div>
+            
+               <img src="../assets/projectImgs/messi.png" alt="hola"> 
+            
         </div>
 
         <div class="text-side">
@@ -27,13 +27,11 @@
 
 <script setup>
 
-const pic = "/images/ecd.jpg"
-
 
 const props = defineProps({
   name: String,
   description: String,
-  img: String 
+  image: String,
 });
 
 
@@ -54,8 +52,8 @@ h3{
 }
 
 img{
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 </style>

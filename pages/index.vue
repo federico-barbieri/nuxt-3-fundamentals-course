@@ -9,7 +9,6 @@
                 <span class="frontend-developer">BETWEEN TWO HEMISPHERES</span>
 
             </section>
-
             <section class="about">
 
                 <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
@@ -28,10 +27,10 @@
                 
                     <ul class="project-list">
                     
-                    <ProjectCard name="Messiverse" description="a cool project" img="/images/hogwarts.png" />
-                    <ProjectCard name="Magic Hackers" description="a cool project" img="" />
-                    <ProjectCard name="Jimmy Sakurai" description="a cool project" img="" />
-                    <ProjectCard name="SwampFest" description="a cool project" img="" />
+                    <ProjectCard name="Messiverse" description="a cool project"  />
+                    <ProjectCard name="Magic Hackers" description="a cool project" />
+                    <ProjectCard name="Jimmy Sakurai" description="a cool project" />
+                    <ProjectCard name="SwampFest" description="a cool project" />
 
                     
                     </ul>
@@ -61,6 +60,7 @@
 <script setup>
 
 import ProjectCard from "../components/ProjectCard.vue"
+
 
 
 </script>
