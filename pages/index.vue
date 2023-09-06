@@ -28,7 +28,7 @@
                     <ul class="project-list">
                     
                     <ProjectCard name="Messiverse" description="a cool project" img="/projectImgs/messi.png"  />
-                    <ProjectCard name="Magic Hackers" description="A dashboard for Dumbledore" img="/projectImgs/fire-hogwarts.png" />
+                    <ProjectCard name="Magic Hackers" description="A dashboard for Dumbledore" img="/projectImgs/hogwarts.png" />
                     <ProjectCard name="Jimmy Sakurai" description="A tribute to a great guitar player" img="/projectImgs/moon.png" />
                     <ProjectCard name="SwampFest" description="The best festival in the world" img="/projectImgs/shrek.jpg" />
 

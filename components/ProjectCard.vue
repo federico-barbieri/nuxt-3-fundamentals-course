@@ -57,7 +57,7 @@ const props = defineProps({
 .project-card:hover{
     max-width: 80%;
     min-width: 50%;
-    height: 20rem;
+    height: 18rem;
     color: black;
     transition: all 0.5s ease-in;
     display: flex;
@@ -83,12 +83,13 @@ h3{
     width: 50%;
     height: 100%;
     overflow: hidden;
+    filter: drop-shadow(5px 5px 5px black);
+
 }
 
 img{
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(5px 5px 5px black);
     border-radius: 10px;
 
 }
