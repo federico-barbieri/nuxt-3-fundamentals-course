@@ -23,14 +23,14 @@
 
                 <div class="p-and-ul">
 
-                    <p>Check a selection of projects I've been working on over the past year</p>
+                    <p class="projects-p">Check a selection of projects I've been working on over the past year</p>
                 
                     <ul class="project-list">
                     
-                    <ProjectCard name="Messiverse" description="a cool project"  />
-                    <ProjectCard name="Magic Hackers" description="A dashboard for Dumbledore" />
-                    <ProjectCard name="Jimmy Sakurai" description="A tribute to a great guitar player" />
-                    <ProjectCard name="SwampFest" description="The best festival in the world" />
+                    <ProjectCard name="Messiverse" description="a cool project" img="/projectImgs/messi.png"  />
+                    <ProjectCard name="Magic Hackers" description="A dashboard for Dumbledore" img="/projectImgs/fire-hogwarts.png" />
+                    <ProjectCard name="Jimmy Sakurai" description="A tribute to a great guitar player" img="/projectImgs/moon.png" />
+                    <ProjectCard name="SwampFest" description="The best festival in the world" img="/projectImgs/shrek.jpg" />
 
                     
                     </ul>
@@ -146,7 +146,7 @@ h2{
 
 .about-p{
     font-size: 1.5rem;
-    margin-left: 2rem;
+    margin: 10rem 0 0 2rem;
 }
 
 
@@ -159,8 +159,10 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: auto;
+    height: 250vh;
     width: 100%;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .projects-title{
@@ -173,11 +175,25 @@ h2{
     width: 70%;
     height: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.projects-p{
+    font-size: 1.5rem;
 }
 
 /* list of projects */
 .project-list{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%;
 }
 
 /* CONTACT */
@@ -187,7 +203,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 100vh;
     width: 100%;
 }
 
