@@ -28,9 +28,9 @@
                     <ul class="project-list">
                     
                     <ProjectCard name="Messiverse" description="a cool project"  />
-                    <ProjectCard name="Magic Hackers" description="a cool project" />
-                    <ProjectCard name="Jimmy Sakurai" description="a cool project" />
-                    <ProjectCard name="SwampFest" description="a cool project" />
+                    <ProjectCard name="Magic Hackers" description="A dashboard for Dumbledore" />
+                    <ProjectCard name="Jimmy Sakurai" description="A tribute to a great guitar player" />
+                    <ProjectCard name="SwampFest" description="The best festival in the world" />
 
                     
                     </ul>
