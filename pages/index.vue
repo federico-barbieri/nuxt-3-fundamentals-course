@@ -16,6 +16,8 @@
                     I'm a Frontend Developer with a background in advertising.
 
                 </p>
+               
+
 
             </section>
 
@@ -43,6 +45,49 @@
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
                 
             </section>
+
+            <section class="stack">
+
+                <h2 class="stack-title"> <nuxt-link to="/projects">STACK</nuxt-link></h2>
+
+                <div class="p-and-ul">
+
+                    <p class="stack-p">Over the years, I've become more and more comfortable with different technologies.</p>
+                    
+
+                    <ul class="stack-list">
+                    
+                   <li>HTML5</li>
+                   <li>CSS</li>
+                   <li>JAVASCRIPT</li>
+                   <li>REACT</li>
+                   <li>NEXTJS</li>
+                   <li>VUE3</li>
+                   <li>NUXTJS</li>
+                   <li>BOOTSTRAP</li>
+                   <li>TAILWIND</li>
+                   <li>TYPESCRIPT</li>
+                   <li>ASANA</li>
+                   <li>SLACK</li>
+                   <li>GIT</li>
+                   <li>GITHUB</li>
+                   <li>OPEN AI</li>
+                   <li>SUPABASE</li>
+                   <li>LARAVEL</li>
+                   <li>WORDPRESS</li>
+
+
+                    
+                    </ul>
+
+
+
+                </div>
+
+
+            </section>
+
+            
 
             <section class="contact">
                 <h2 class="contact-title">CONTACT</h2>
@@ -193,6 +238,51 @@ h2{
     align-items: center;
     justify-content: space-around;
     height: 80%;
+    width: 100%;
+}
+
+/* STACK */
+
+.stack{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 250vh;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.stack-title{
+    writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
+    text-orientation: upright; /* characters are upright */
+    width: 30%;
+}
+
+.p-and-ul{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack-p{
+    font-size: 1.5rem;
+    max-width: 50%;
+    margin: 0 0 10rem 0;
+}
+
+/* list of projects */
+.stack-list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    height: 60%;
     width: 100%;
 }
 
