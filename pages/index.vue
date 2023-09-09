@@ -280,8 +280,8 @@ h2{
 .stack-list{
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     height: 60%;
     width: 100%;
 }
