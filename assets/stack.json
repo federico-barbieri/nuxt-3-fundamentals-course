@@ -1,0 +1,88 @@
+{
+    "stack": [
+    {
+        "name": "Adobe After Effects",
+        "path": "icons/ae.png"
+    },
+    {
+        "name": "Adobe Illustrator",
+        "path": "icons/ai.svg"
+    },
+    {
+        "name": "Adobe XD",
+        "path": "icons/xd.svg"
+    },
+    {
+        "name": "Bootstrap",
+        "path": "icons/bootstrap5.svg"
+    },
+    {
+        "name": "CSS",
+        "path": "icons/css3.svg"
+    },
+    {
+        "name": "Figma",
+        "path": "icons/figma.svg"
+    },
+    {
+        "name": "Git",
+        "path": "icons/git.png"
+    },
+    {
+        "name": "GitHub",
+        "path": "icons/github.png"
+    },
+    {
+        "name": "HTML",
+        "path": "icons/html5.svg"
+    },
+    {
+        "name": "JavaScript",
+        "path": "icons/js.svg"
+    },
+    {
+        "name": "Laravel",
+        "path": "icons/laravel.png"
+    },
+    {
+        "name": "Next JS",
+        "path": "icons/nextjs.svg"
+    },
+    {
+        "name": "Nuxt JS",
+        "path": "icons/nuxtjs.png"
+    },
+    {
+        "name": "Open AI",
+        "path": "icons/openai.png"
+    },
+    {
+        "name": "Adobe Photoshop",
+        "path": "icons/ps.svg"
+    },
+    {
+        "name": "React JS",
+        "path": "icons/reactjs.svg"
+    },
+    {
+        "name": "Tailwind",
+        "path": "icons/tailwind.png"
+    },
+    {
+        "name": "TypeScript",
+        "path": "icons/typescript.png"
+    },
+    {
+        "name": "Vite JS",
+        "path": "icons/vitejs.png"
+    },
+    {
+        "name": "Vue JS",
+        "path": "icons/vuejs.png"
+    },
+    {
+        "name": "WordPress",
+        "path": "icons/wordpress.png"
+    }
+    ]
+}

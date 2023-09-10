@@ -53,32 +53,11 @@
                 <div class="p-and-ul">
 
                     <p class="stack-p">Over the years, I've become more and more comfortable with different technologies.</p>
+
+                    <IconGallery :images="stackArray" />
                     
 
-                    <ul class="stack-list">
-                    
-                   <li>HTML5</li>
-                   <li>CSS</li>
-                   <li>JAVASCRIPT</li>
-                   <li>REACT</li>
-                   <li>NEXTJS</li>
-                   <li>VUE3</li>
-                   <li>NUXTJS</li>
-                   <li>BOOTSTRAP</li>
-                   <li>TAILWIND</li>
-                   <li>TYPESCRIPT</li>
-                   <li>ASANA</li>
-                   <li>SLACK</li>
-                   <li>GIT</li>
-                   <li>GITHUB</li>
-                   <li>OPEN AI</li>
-                   <li>SUPABASE</li>
-                   <li>LARAVEL</li>
-                   <li>WORDPRESS</li>
-
-
-                    
-                    </ul>
+                   
 
 
 
@@ -105,6 +84,10 @@
 <script setup>
 
 import ProjectCard from "../components/ProjectCard.vue"
+
+import stack from "../assets/stack.json"
+
+let stackArray = stack.stack;
 
 
 
