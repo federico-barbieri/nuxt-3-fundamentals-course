@@ -284,6 +284,7 @@ h2{
     grid-template-rows: repeat(6, 1fr);
     height: 60%;
     width: 100%;
+    gap: 1rem;
 }
 
 /* CONTACT */
