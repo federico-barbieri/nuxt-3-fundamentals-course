@@ -13,6 +13,10 @@
         "path": "icons/xd.svg"
     },
     {
+        "name": "Adobe Photoshop",
+        "path": "icons/ps.svg"
+    },
+    {
         "name": "Bootstrap",
         "path": "icons/bootstrap5.svg"
     },
@@ -25,6 +29,10 @@
         "path": "icons/figma.svg"
     },
     {
+        "name": "Tailwind",
+        "path": "icons/tailwind.png"
+    },
+    {
         "name": "Git",
         "path": "icons/git.png"
     },
@@ -33,8 +41,28 @@
         "path": "icons/github.png"
     },
     {
+        "name": "Vite JS",
+        "path": "icons/vitejs.png"
+    },
+    {
+        "name": "Open AI",
+        "path": "icons/openai.png"
+    },
+    {
         "name": "JavaScript",
         "path": "icons/js.svg"
+    },
+    {
+        "name": "TypeScript",
+        "path": "icons/typescript.png"
+    },
+    {
+        "name": "React JS",
+        "path": "icons/reactjs.svg"
+    },
+    {
+        "name": "Vue JS",
+        "path": "icons/vuejs.png"
     },
     {
         "name": "Laravel",
@@ -47,34 +75,6 @@
     {
         "name": "Nuxt JS",
         "path": "icons/nuxtjs.png"
-    },
-    {
-        "name": "Open AI",
-        "path": "icons/openai.png"
-    },
-    {
-        "name": "Adobe Photoshop",
-        "path": "icons/ps.svg"
-    },
-    {
-        "name": "React JS",
-        "path": "icons/reactjs.svg"
-    },
-    {
-        "name": "Tailwind",
-        "path": "icons/tailwind.png"
-    },
-    {
-        "name": "TypeScript",
-        "path": "icons/typescript.png"
-    },
-    {
-        "name": "Vite JS",
-        "path": "icons/vitejs.png"
-    },
-    {
-        "name": "Vue JS",
-        "path": "icons/vuejs.png"
     },
     {
         "name": "WordPress",

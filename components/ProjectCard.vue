@@ -68,7 +68,6 @@ const props = defineProps({
 
 .project-card:hover h3{
     font-size: 3rem;
-    text-decoration: underline 1px solid white;
 }
 
 h3{

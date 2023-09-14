@@ -27,6 +27,11 @@ const props = defineProps({
     width: 8rem;
     height: auto;
     filter: drop-shadow(10px 10px 3px var(--dark-slate));
+    transition: all 0.5s ease-in;
+}
+
+.stack-icon:hover{
+  transform: scale(1.1);
 }
 
 </style>
