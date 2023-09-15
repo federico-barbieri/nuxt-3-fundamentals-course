@@ -28,15 +28,16 @@
                     <p class="projects-p">Check a selection of projects I've been working on over the past year</p>
                 
                     <ul class="project-list">
-                    
-                    <ProjectCard name="Messiverse" description="a cool project" img="/projectImgs/messi.png"  />
-                    <ProjectCard name="Magic Hackers" description="A dashboard for Dumbledore" img="/projectImgs/hogwarts.png" />
-                    <ProjectCard name="Jimmy Sakurai" description="A tribute to a great guitar player" img="/projectImgs/moon.png" />
-                    <ProjectCard name="SwampFest" description="The best festival in the world" img="/projectImgs/shrek.jpg" />
 
-                    
+                        <li><img class="project-img" src="/resized/messi.png" alt="Messiverse picture"></li>
+                        <li><img class="project-img" src="/resized/hogwarts.png" alt="Hogwarts picture"></li>
+                        <li><img class="project-img" src="/resized/plastic.png" alt="Swampfest picture"></li>
+                        <li><img class="project-img" src="/resized/moon.png" alt="Sakurai picture"></li>
+
+                        
                     </ul>
 
+                    <Button text="SEE ALL PROJECTS" />
 
 
                 </div>
@@ -48,32 +49,28 @@
 
             <section class="stack">
 
+                
+
                 <h2 class="stack-title"> <nuxt-link to="/projects">STACK</nuxt-link></h2>
 
-                <div class="p-and-ul">
+                <div class="p-and-ul-stack">
+
 
                     <p class="stack-p">Over the years, I've become more and more comfortable with different technologies.</p>
 
                     <IconGallery :images="stackArray" />
                     
-
-                   
-
-
-
                 </div>
 
 
             </section>
 
-            
 
             <section class="contact">
                 <h2 class="contact-title">CONTACT</h2>
                 <p>let's get in touch!</p>
             </section>
 
-            
 
 
         </main>
@@ -83,7 +80,7 @@
 
 <script setup>
 
-import ProjectCard from "../components/ProjectCard.vue"
+import Button from "../components/Button.vue";
 
 import stack from "../assets/stack.json"
 
@@ -206,7 +203,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .projects-p{
@@ -216,12 +213,17 @@ h2{
 /* list of projects */
 .project-list{
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 35%;
     width: 100%;
+}
+
+.project-img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid red; 
 }
 
 /* STACK */
@@ -243,7 +245,7 @@ h2{
     width: 30%;
 }
 
-.p-and-ul{
+.p-and-ul-stack{
     width: 70%;
     height: 100%;
     text-align: center;
