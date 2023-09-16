@@ -37,7 +37,8 @@
                         
                     </ul>
 
-                    <Button text="SEE ALL PROJECTS" />
+                    
+                    <nuxt-link to="/projects"><Button text="SEE ALL PROJECTS"></Button></nuxt-link>
 
 
                 </div>
