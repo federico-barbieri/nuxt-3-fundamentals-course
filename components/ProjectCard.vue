@@ -42,33 +42,16 @@ const props = defineProps({
 
 
 .project-card{
-    max-width: 80%;
-    min-width: 50%;
-    height: 15rem;
+    width: 80%;
+    height: auto;
     color: black;
     transition: all 0.5s ease-in;
     display: flex;
     flex-direction: row;
     color: white;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
-    transition: all 1s ease-in;
 }
 
-.project-card:hover{
-    max-width: 80%;
-    min-width: 50%;
-    height: 18rem;
-    color: black;
-    transition: all 0.5s ease-in;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.project-card:hover h3{
-    font-size: 3rem;
-}
 
 h3{
     font-size: 2rem;
