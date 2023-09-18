@@ -18,6 +18,14 @@
                         />
 
                         <ProjectCard 
+                        class="swampfest" 
+                        name="SwampFest"  
+                        description="The best festival in the world" 
+                        img="/projectImgs/shrek.jpg"
+                        :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
+                        />
+
+                        <ProjectCard 
                         class="hackers" 
                         name="Magic Hackers"  
                         description="A dashboard for Dumbledore" 
@@ -26,11 +34,11 @@
                         />
 
                         <ProjectCard 
-                        class="swampfest" 
-                        name="SwampFest"  
-                        description="The best festival in the world" 
-                        img="/projectImgs/shrek.jpg"
-                        :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
+                        class="edc" 
+                        name="EDC"  
+                        description="Find the house of your dreams" 
+                        img="/projectImgs/ecd.jpg"
+                        :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
                         />
                     </div>
                     
