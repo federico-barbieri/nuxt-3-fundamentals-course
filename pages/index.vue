@@ -14,6 +14,9 @@
                 <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
                 <p class="about-p">
                     I'm a Frontend Developer with a background in advertising.
+                    I'm in my last semester at Københavns Erhvervsakademi (KEA) 
+                    and currently doing an internship 
+                    @ <nuxt-link target="_blank" to="https://waitly.dk/"><em>Waitly.dk</em></nuxt-link>
 
                 </p>
                
@@ -173,6 +176,7 @@ h2{
 .about-p{
     font-size: 1.5rem;
     margin: 10rem 0 0 2rem;
+    max-width: 45ch;
 }
 
 
@@ -224,7 +228,8 @@ h2{
 .project-img{
     max-width: 100%;
     height: auto;
-    border: 1px solid red; 
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px black);
 }
 
 /* STACK */

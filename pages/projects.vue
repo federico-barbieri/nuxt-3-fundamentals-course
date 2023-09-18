@@ -9,10 +9,29 @@
      
                     
                     <div class="project-cards">
-                        <ProjectCard class="messiverse"  name="Messiverse" description="A multiverse of Messis" img="/projectImgs/messi.png"  />
-                        <ProjectCard class="hackers" name="Magic Hackers"  description="A dashboard for Dumbledore" img="/projectImgs/hogwarts.png" />
-                        <ProjectCard class="sakurai" name="Jimmy Sakurai" description="A tribute to a great guitar player" img="/projectImgs/moon.png" />
-                        <ProjectCard class="swampfest" name="SwampFest"  description="The best festival in the world" img="/projectImgs/shrek.jpg" />
+                        <ProjectCard 
+                        class="messiverse"  
+                        name="Messiverse" 
+                        description="A multiverse of Messis" 
+                        img="/projectImgs/messi.png"
+                        :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
+                        />
+
+                        <ProjectCard 
+                        class="hackers" 
+                        name="Magic Hackers"  
+                        description="A dashboard for Dumbledore" 
+                        img="/projectImgs/hogwarts.png"
+                        :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/js.svg']"
+                        />
+
+                        <ProjectCard 
+                        class="swampfest" 
+                        name="SwampFest"  
+                        description="The best festival in the world" 
+                        img="/projectImgs/shrek.jpg"
+                        :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
+                        />
                     </div>
                     
                     
@@ -75,23 +94,27 @@ function toggleAll(){
 
 
 .messiverse{
-    background-color: black;
+   margin-bottom: 5rem;
 }
 
 .hackers{
-    background-color: hotpink;
+    margin-bottom: 5rem;
+
 }
 
 .sakurai{
-    background-color: aqua;
+    margin-bottom: 5rem;
+
 }
 
 .swampfest{
-    background-color: saddlebrown;
+    margin-bottom: 5rem;
+
 }
 
 .bikini{
-    background-color: yellow;
+    margin-bottom: 5rem;
+
 }
 
 a{
@@ -138,12 +161,13 @@ h2{
 }
 
 .project-cards{
-    width:100%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 
