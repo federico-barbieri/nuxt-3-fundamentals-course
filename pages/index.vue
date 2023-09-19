@@ -5,78 +5,85 @@
 
             <section class="hero">
 
-                <h1><span class="federico">FEDERICO</span> <span class="barbieri">BARBIERI</span></h1>
-                <span class="frontend-developer">BETWEEN TWO HEMISPHERES</span>
+                <Name class="name" />
 
-            </section>
-            <section class="about">
+                <ProjectSquare class="projectSquare" />
 
                 <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
+
+                <Dog class="dog" />
+
                 <p class="about-p">
-                    I'm a Frontend Developer with a background in advertising.
-                    I'm in my last semester at Københavns Erhvervsakademi (KEA) 
-                    and currently doing an internship 
-                    @ <nuxt-link target="_blank" to="https://waitly.dk/"><em>Waitly.dk</em></nuxt-link>
-
+                    I'm a Frontend Developer with a background in advertising. <br>
+                    I'm in my last semester at Københavns Erhvervsakademi (KEA) <br>
+                    and currently doing an internship @ Waitly.dk
                 </p>
-               
 
+                <NiceBackground class="nice-background" />
 
-            </section>
+                <p class="about-p">
+                    I enjoy trying out new tools that spark my curiosity <br>
+                    and enhance my ideas.
+                </p>
 
-            <section class="projects">
+                <Random class="random" />
 
-                <div class="p-and-ul">
+                <IconGallery :images="stackArray" />
 
-                    <p class="projects-p">Check a selection of projects I've been working on over the past year</p>
-                
-                    <ul class="project-list">
-
-                        <li><img class="project-img" src="/resized/messi.png" alt="Messiverse picture"></li>
-                        <li><img class="project-img" src="/resized/hogwarts.png" alt="Hogwarts picture"></li>
-                        <li><img class="project-img" src="/resized/plastic.png" alt="Swampfest picture"></li>
-                        <li><img class="project-img" src="/resized/moon.png" alt="Sakurai picture"></li>
-
-                        
-                    </ul>
-
-                    
-                    <nuxt-link to="/projects"><Button text="SEE ALL PROJECTS"></Button></nuxt-link>
-
-
-                </div>
-                
-               
                 <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
-                
-            </section>
 
-            <section class="stack">
+                <ProjectCard 
+                        class="messiverse"  
+                        name="Messiverse" 
+                        description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
+                        img="/projectImgs/messi.png"
+                        :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
+                        border_bottom="1px solid white"
+                        border_top="none"
+                        margin="0 10rem 10rem 2rem"
+                />
 
-                
+                <ProjectCard 
+                        class="swampfest" 
+                        name="SwampFest"  
+                        description="The best festival in the world" 
+                        img="/projectImgs/shrek.jpg"
+                        :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
+                        border_bottom="none"
+                        border_top="1px solid white"
+                        margin="10rem 10rem 2rem 2rem"
+                />
 
-                <h2 class="stack-title"> <nuxt-link to="/projects">STACK</nuxt-link></h2>
+                <ProjectCard 
+                        class="hackers" 
+                        name="Magic Hackers"  
+                        description="A dashboard for Dumbledore" 
+                        img="/projectImgs/hogwarts.png"
+                        :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/js.svg']"
+                        border_bottom="1px solid white"
+                        border_top="none"
+                        margin="0 10rem 10rem 2rem"
+                />
 
-                <div class="p-and-ul-stack">
+                <ProjectCard 
+                        class="edc" 
+                        name="EDC"  
+                        description="Find the house of your dreams" 
+                        img="/projectImgs/ecd.jpg"
+                        :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
+                        border_bottom="none"
+                        border_top="1px solid white"
+                        margin="10rem 10rem 2rem 2rem"
+                        
+                />
 
-
-                    <p class="stack-p">Over the years, I've become more and more comfortable with different technologies.</p>
-
-                    <IconGallery :images="stackArray" />
-                    
-                </div>
-
-
-            </section>
-
-
-            <section class="contact">
                 <h2 class="contact-title">CONTACT</h2>
-                <p>let's get in touch!</p>
+                <p>Let's get in touch and start something memorable together.</p>
+
+               
             </section>
-
-
-
+            
+               
         </main>
 
 </div>
@@ -85,8 +92,12 @@
 <script setup>
 
 import Button from "../components/Button.vue";
-
 import stack from "../assets/stack.json"
+import Name from "../components/Name.vue";
+import ProjectSquare from "../components/ProjectSquare.vue";
+import Random from "../components/Random.vue";
+import Dog from "../components/Dog.vue";
+import NiceBackground from "../components/NiceBackground.vue";
 
 let stackArray = stack.stack;
 
@@ -108,97 +119,60 @@ a:visited{
 
 main{
     width: 100vw;
-    height: auto;
+    height: 85vh;
     color: var(--near-white);
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", sans-serif;
-    background-color: var(--neutral-gray);
-    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling when needed */
+    overflow-y: hidden;
 }
 
 /* HERO */
 
 .hero{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     height: 85vh;
-    width: 100vw;
+    width: 600vw;
+    border: 1px solid white;
+    margin: auto auto;
+    border-radius: 30px;
+    padding: 2rem;
+    
 }
 
-h1{
-    font-size: 5rem;
-    text-align: center;
-}
-
-.federico{
-    text-decoration: underline;
-    display: inline-block;
-    transform: translate(3rem, -5.39rem);
-}
-
-.barbieri{
-    text-decoration: overline;
-    display: inline-block;
-    transform: translate(1.5rem, 0.61rem);
-}
-
-.frontend-developer{
-    font-size: 1.5rem;
-    display: block;
-    margin: 3rem auto;
-}
 
 h2{
-    font-size: 15rem;
+    font-size: 5rem;
     opacity: 0.3;
+    margin: 0 5vw;
 }
 
 /* ABOUT */
-
-.about{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: auto;
-    width: 100%;
-
-}
-
 .about-title{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
 }
 
 .about-p{
-    font-size: 1.5rem;
-    margin: 10rem 0 0 2rem;
-    max-width: 45ch;
-}
-
-
-
-
-/* PROJECTS */
-
-.projects{
+    font-size: 1rem;
+    margin: 0rem 0 0 2rem;
+    width: 40rem;
+    height: 50%;
+    line-height: 2;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    height: 250vh;
-    width: 100%;
-    padding: 1rem;
-    margin: 1rem;
 }
+
 
 .projects-title{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
-    width: 30%;
+    font-size: 3rem;
 }
 
 .p-and-ul{

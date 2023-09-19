@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card">
+    <div class="project-card" :style="{ 'margin': margin}">
 
         <div class="img-container">
             
@@ -7,7 +7,7 @@
             
         </div>
 
-        <div class="text-side">
+        <div class="text-side" :style="{ 'border-top': border_top, 'border-bottom': border_bottom}">
 
             <h3>{{ name }}</h3>
 
@@ -18,7 +18,7 @@
             </ul>
       
     
-            <p class="description-p">{{ description }}</p>
+            <p class="description-p" v-html="description"></p>
 
             <Button class="btnnn" text="See project" />
 
@@ -41,6 +41,9 @@ const props = defineProps({
     description: String,
     img: String,
     stack: Array,
+    border_bottom: String,
+    border_top: String,
+    margin: String,
 });
 
 
@@ -58,8 +61,8 @@ const props = defineProps({
 
 
 .project-card{
-    width: 60vw;
-    height: auto;
+    width: 80vw;
+    height: 70%;
     color: black;
     transition: all 0.5s ease-in;
     display: flex;
@@ -67,6 +70,7 @@ const props = defineProps({
     align-items: center;
     justify-content: space-between;
     color: white;
+    margin-right: 5rem;
 }
 
 
@@ -93,15 +97,15 @@ img{
 }
 
 .text-side{
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
     padding: 2rem 2rem 0 0;
+    border-right: 1px solid white;
+    word-wrap: break-word;
 }
 
 .image-list {
@@ -126,7 +130,10 @@ img{
 
 .description-p{
     font-size: 1rem;
-    height: 20%;
+    height: 30%;
+    width: 100%;
+    line-height: 2;
+    text-align: center;
 }
 
 </style>

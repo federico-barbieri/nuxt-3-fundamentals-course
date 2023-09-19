@@ -4,15 +4,13 @@
         <nav>
             <span><nuxt-link to="/">LOGO</nuxt-link></span>
             <ul>
-                <li><nuxt-link to="/about">ABOUT</nuxt-link></li>
-                <li><nuxt-link to="/projects">PROJECTS</nuxt-link></li>
+                <li><nuxt-link to="/about"><img class="linkedin" src="/icons/linkedin.png" alt=""></nuxt-link></li>
+                <li><nuxt-link to="/projects"><img src="/icons/github.png" alt=""></nuxt-link></li>
             </ul>
         </nav>
     </header>
     <slot />
-    <footer>
-        <p>I am a footer, respect me</p>
-    </footer>
+   
     </div>  
 </template>
 
@@ -43,7 +41,7 @@ header{
     width: 100vw;
     height: 15vh;
     background-color: var(--primary-blue);
-    background-color: var(--dark-slate);
+    background-color: rgb(17,17,17);
     color: var(--near-white);
     font-family: "Roboto", sans-serif;
 }
@@ -54,39 +52,33 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 1.5rem;
 }
 
 nav > ul{
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
+    border: 1px solid white;
 }
 
 ul > li {
     transition: all 0.5s ease-in;
+    transform: scale(0.2);
+}
+
+.linkedin{
+    transform: scale(0.7);
 }
 
 ul > li:hover {
     transition: all 0.5s ease-in;
     text-decoration: underline;
-}
-
-footer{
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--primary-blue);
-    background-color: var(--dark-slate);
-    color: var(--near-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
 }
 
 </style>

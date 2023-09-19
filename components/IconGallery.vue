@@ -24,7 +24,7 @@ const props = defineProps({
 }
 
 .stack-icon{
-    width: 8rem;
+    width: 5rem;
     height: auto;
     filter: drop-shadow(10px 10px 3px var(--dark-slate));
     transition: all 0.5s ease-in;
