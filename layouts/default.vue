@@ -4,8 +4,8 @@
         <nav>
             <span><nuxt-link to="/">LOGO</nuxt-link></span>
             <ul>
-                <li><nuxt-link to="/about"><img class="linkedin" src="/icons/linkedin.png" alt=""></nuxt-link></li>
-                <li><nuxt-link to="/projects"><img src="/icons/github.png" alt=""></nuxt-link></li>
+                <li><nuxt-link to="https://www.linkedin.com/in/fedebarbieri/" target="_blank"><img class="linkedin" src="/icons/linkedin.png" alt=""></nuxt-link></li>
+                <li><nuxt-link to="https://github.com/federico-barbieri" target="_blank"><img src="/icons/github.png" alt=""></nuxt-link></li>
             </ul>
         </nav>
     </header>

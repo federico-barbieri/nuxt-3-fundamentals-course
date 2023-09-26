@@ -7,17 +7,19 @@
 
                 <Name class="name" />
 
-                <ProjectSquare class="projectSquare" />
+                <div class="messi-container">
+        
+                    <img class="messi-image" src="/projectImgs/messi.png" alt="Project image">        
 
-                <h2 class="about-title"> <nuxt-link to="/about">ABOUT</nuxt-link></h2>
-
-                <Dog class="dog" />
+                </div>    
 
                 <p class="about-p">
                     I'm a Frontend Developer with a background in advertising. <br>
                     I'm in my last semester at Københavns Erhvervsakademi (KEA) <br>
                     and currently doing an internship @ Waitly.dk
                 </p>
+
+                
 
                 <NiceBackground class="nice-background" />
 
@@ -28,26 +30,27 @@
 
                 <Random class="random" />
 
-                <IconGallery :images="stackArray" />
+                <IconGallery class="iconGallery" :images="stackArray" />
 
-                <h2 class="projects-title"> <nuxt-link to="/projects">PROJECTS</nuxt-link></h2>
+                <h2 class="projects-title">PROJECTS</h2>
 
                 <ProjectCard 
                         class="messiverse"  
                         name="Messiverse" 
                         description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
-                        img="/projectImgs/messi.png"
+                        
                         :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
                         border_bottom="1px solid white"
                         border_top="none"
                         margin="0 10rem 10rem 2rem"
                 />
 
+
                 <ProjectCard 
                         class="swampfest" 
                         name="SwampFest"  
                         description="The best festival in the world" 
-                        img="/projectImgs/shrek.jpg"
+                        
                         :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
                         border_bottom="none"
                         border_top="1px solid white"
@@ -58,7 +61,7 @@
                         class="hackers" 
                         name="Magic Hackers"  
                         description="A dashboard for Dumbledore" 
-                        img="/projectImgs/hogwarts.png"
+                        
                         :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/js.svg']"
                         border_bottom="1px solid white"
                         border_top="none"
@@ -69,7 +72,7 @@
                         class="edc" 
                         name="EDC"  
                         description="Find the house of your dreams" 
-                        img="/projectImgs/ecd.jpg"
+                        
                         :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
                         border_bottom="none"
                         border_top="1px solid white"
@@ -137,17 +140,41 @@ main{
     flex-direction: row;
     align-items: center;
     height: 85vh;
-    width: 600vw;
+    width: 750vw;
     border: 1px solid white;
-    margin: auto auto;
+    margin: auto 15rem auto 0;
     border-radius: 30px;
     padding: 2rem;
     
 }
 
+.messi-container{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 10rem;
+}
+
+.messi-image{
+    max-width: 80%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transform: scale(0.8);
+}
+
 
 h2{
-    font-size: 5rem;
+    font-size: 6rem;
     opacity: 0.3;
     margin: 0 5vw;
 }
@@ -159,7 +186,7 @@ h2{
 }
 
 .about-p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0rem 0 0 2rem;
     width: 40rem;
     height: 50%;
@@ -172,7 +199,7 @@ h2{
 .projects-title{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .p-and-ul{
@@ -252,6 +279,10 @@ h2{
     gap: 1rem;
 }
 
+.iconGallery{
+    margin-right: 10rem;
+}
+
 /* CONTACT */
 
 .contact{
@@ -266,6 +297,21 @@ h2{
 .contact-title{
     
     text-decoration: overline;
+}
+
+
+.messiverse{
+    transition: all 0.5s ease-in;
+}
+
+.messiverse:hover{
+    background-image: url('/messi/xul1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    color: black;
+    font-weight: 700;
 }
 
 </style>

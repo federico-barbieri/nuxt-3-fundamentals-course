@@ -1,11 +1,7 @@
 <template>
     <div class="project-card" :style="{ 'margin': margin}">
 
-        <div class="img-container">
-            
-               <img :src="img" alt="hola"> 
-            
-        </div>
+        
 
         <div class="text-side" :style="{ 'border-top': border_top, 'border-bottom': border_bottom}">
 
@@ -61,7 +57,7 @@ const props = defineProps({
 
 
 .project-card{
-    width: 80vw;
+    width: 50vw;
     height: 70%;
     color: black;
     transition: all 0.5s ease-in;
@@ -97,7 +93,7 @@ img{
 }
 
 .text-side{
-    width: 55%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
