@@ -58,7 +58,7 @@ const props = defineProps({
 
 
 .project-card{
-    width: 50vw;
+    width: 50rem;
     height: 70%;
     color: black;
     transition: all 0.5s ease-in;

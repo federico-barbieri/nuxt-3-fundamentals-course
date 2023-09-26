@@ -2,7 +2,12 @@
     <div>
     <header>
         <nav>
-            <span><nuxt-link to="/">LOGO</nuxt-link></span>
+            <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-logo" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+            <span class="f"><nuxt-link to="/">FB</nuxt-link></span>
+            </div>
             <ul>
                 <li><nuxt-link to="https://www.linkedin.com/in/fedebarbieri/" target="_blank"><img class="linkedin" src="/icons/linkedin.png" alt=""></nuxt-link></li>
                 <li><nuxt-link to="https://github.com/federico-barbieri" target="_blank"><img src="/icons/github.png" alt=""></nuxt-link></li>
@@ -56,6 +61,10 @@ nav{
     font-size: 1.5rem;
 }
 
+nav > .logo{
+    width: 20%;
+}
+
 nav > ul{
     width: 40%;
     height: 80%;
@@ -64,13 +73,14 @@ nav > ul{
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    border: 1px solid white;
 }
 
 ul > li {
     transition: all 0.5s ease-in;
     transform: scale(0.2);
 }
+
+
 
 .linkedin{
     transform: scale(0.7);
@@ -80,5 +90,45 @@ ul > li:hover {
     transition: all 0.5s ease-in;
     text-decoration: underline;
 }
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover .arrow-logo{
+        opacity: 1;
+        margin: 0 0 0 4rem;
+        transform: scale(3), translateX(2rem);
+}
+
+.logo:hover .f{
+    font-size: 3.5rem;
+    font-family: 'Exo', sans-serif;
+    writing-mode: vertical-lr; /* vertical writing mode, right-to-left */
+    transform: translateX(2rem);
+}
+
+.arrow-logo{
+    transform: scale(3);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+
+
+.f{
+    font-size: 3.5rem;
+    font-family: 'Exo', sans-serif;
+    writing-mode: vertical-lr; /* vertical writing mode, right-to-left */
+    transition: all 0.5s ease-in;
+}
+
+.f:hover{
+    
+}
+
 
 </style>

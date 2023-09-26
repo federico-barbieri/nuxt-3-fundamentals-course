@@ -34,17 +34,6 @@
 
                 <h2 class="projects-title">PROJECTS</h2>
 
-                <ProjectCard 
-                        class="messiverse"  
-                        name="Messiverse" 
-                        description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
-                        :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
-                        border_bottom="1px solid white"
-                        border_top="none"
-                        margin="0 10rem 10rem 2rem"
-                        liveProject=""
-                />
-
 
                 <ProjectCard 
                         class="swampfest" 
@@ -58,14 +47,36 @@
                 />
 
                 <ProjectCard 
-                        class="hackers" 
+                        class="messiverse"  
+                        name="Messiverse" 
+                        description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
+                        :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
+                        border_bottom="1px solid white"
+                        border_top="none"
+                        margin="0 10rem 10rem 2rem"
+                        liveProject="https://messiverse-omega.vercel.app/"
+                />
+
+                <ProjectCard 
+                        class="sakurai"  
+                        name="Jimmy Sakurai" 
+                        description="Meet the man who promised to emulate <br>his idol up to the last cell of his body. Meet Jimmy Sakurai." 
+                        :stack="['/icons/openai.png', '/icons/js.svg', '/icons/ps.svg']"
+                        border_bottom="none"
+                        border_top="1px solid white"
+                        margin="10rem 10rem 2rem 2rem"
+                        liveProject="https://newjimmy.netlify.app/"
+                />
+
+                <ProjectCard 
+                        class="hogwarts" 
                         name="Magic Hackers"  
                         description="A dashboard for Dumbledore" 
                         :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/js.svg']"
                         border_bottom="1px solid white"
                         border_top="none"
                         margin="0 10rem 10rem 2rem"
-                        liveProject=""
+                        liveProject="https://federico-barbieri.github.io/hogwarts/"
                 />
 
                 <ProjectCard 
@@ -76,7 +87,7 @@
                         border_bottom="none"
                         border_top="1px solid white"
                         margin="10rem 10rem 2rem 2rem"
-                        liveProject=""
+                        liveProject="https://vercel.com/federico-barbieri/charlie-tango-case"
                         
                 />
 
@@ -299,6 +310,20 @@ h2{
     text-decoration: overline;
 }
 
+.swampfest{
+    transition: all 0.5s ease-in;
+}
+
+.swampfest:hover{
+    background-image: url('/projectImgs/festival1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    color: black;
+    font-weight: 700;
+}
+
 
 .messiverse{
     transition: all 0.5s ease-in;
@@ -306,6 +331,48 @@ h2{
 
 .messiverse:hover{
     background-image: url('/messi/xul1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    color: black;
+    font-weight: 700;
+}
+
+.sakurai{
+    transition: all 0.5s ease-in;
+}
+
+.sakurai:hover{
+    background-image: url('/projectImgs/moon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    color: black;
+    font-weight: 700;
+}
+
+.hogwarts{
+    transition: all 0.5s ease-in;
+}
+
+.hogwarts:hover{
+    background-image: url('/projectImgs/fire-hogwarts.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    color: black;
+    font-weight: 700;
+}
+
+.edc{
+    transition: all 0.5s ease-in;
+}
+
+.edc:hover{
+    background-image: url('/projectImgs/ecd.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
