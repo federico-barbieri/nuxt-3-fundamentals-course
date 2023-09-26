@@ -152,7 +152,6 @@ main{
     align-items: center;
     height: 85vh;
     width: 750vw;
-    border: 1px solid white;
     margin: auto 15rem auto 0;
     border-radius: 30px;
     padding: 2rem;
