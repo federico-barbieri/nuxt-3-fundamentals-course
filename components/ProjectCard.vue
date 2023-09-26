@@ -16,7 +16,7 @@
     
             <p class="description-p" v-html="description"></p>
 
-            <Button class="btnnn" text="See project" />
+            <nuxt-link :to="liveProject" target="_blank"><Button class="btnnn" text="See project"></Button></nuxt-link>
 
             
 
@@ -40,6 +40,7 @@ const props = defineProps({
     border_bottom: String,
     border_top: String,
     margin: String,
+    liveProject: String,
 });
 
 

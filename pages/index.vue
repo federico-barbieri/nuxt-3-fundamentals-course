@@ -38,11 +38,11 @@
                         class="messiverse"  
                         name="Messiverse" 
                         description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
-                        
                         :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
                         border_bottom="1px solid white"
                         border_top="none"
                         margin="0 10rem 10rem 2rem"
+                        liveProject=""
                 />
 
 
@@ -50,33 +50,33 @@
                         class="swampfest" 
                         name="SwampFest"  
                         description="The best festival in the world" 
-                        
                         :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
                         border_bottom="none"
                         border_top="1px solid white"
                         margin="10rem 10rem 2rem 2rem"
+                        liveProject="https://swampfest.vercel.app/"
                 />
 
                 <ProjectCard 
                         class="hackers" 
                         name="Magic Hackers"  
                         description="A dashboard for Dumbledore" 
-                        
                         :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/js.svg']"
                         border_bottom="1px solid white"
                         border_top="none"
                         margin="0 10rem 10rem 2rem"
+                        liveProject=""
                 />
 
                 <ProjectCard 
                         class="edc" 
                         name="EDC"  
                         description="Find the house of your dreams" 
-                        
                         :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
                         border_bottom="none"
                         border_top="1px solid white"
                         margin="10rem 10rem 2rem 2rem"
+                        liveProject=""
                         
                 />
 
