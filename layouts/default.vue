@@ -9,8 +9,8 @@
             <span class="f"><nuxt-link to="/">FB</nuxt-link></span>
             </div>
             <ul>
-                <li><nuxt-link to="https://www.linkedin.com/in/fedebarbieri/" target="_blank"><img class="linkedin" src="/icons/linkedin.png" alt=""></nuxt-link></li>
-                <li><nuxt-link to="https://github.com/federico-barbieri" target="_blank"><img src="/icons/github.png" alt=""></nuxt-link></li>
+                <li><nuxt-link to="https://www.linkedin.com/in/fedebarbieri/" target="_blank"><img class="linkedin" src="/icons/linkedin.png" alt="LinkedIn logo"></nuxt-link></li>
+                <li><nuxt-link to="https://github.com/federico-barbieri" target="_blank"><img class="github" src="/icons/github.png" alt="Github logo"></nuxt-link></li>
             </ul>
         </nav>
     </header>
@@ -84,6 +84,20 @@ ul > li {
 
 .linkedin{
     transform: scale(0.7);
+    transition: all 0.5s ease-in
+}
+
+.linkedin:hover{
+    transform: scale(0.8);
+}
+
+.github{
+    transform: scale(1);
+    transition: all 0.5s ease-in
+}
+
+.github:hover{
+    transform: scale(1.1);
 }
 
 ul > li:hover {
