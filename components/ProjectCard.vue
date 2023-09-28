@@ -1,26 +1,28 @@
 <template>
-    <div class="project-card" :style="{ 'margin': margin}">
+    <div class="project-card" :style="{ 'margin': margin}" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
 
         
 
         <div class="text-side" :style="{ 'border-top': border_top, 'border-bottom': border_bottom}">
 
-            <h3>{{ name }}</h3>
+            <h3 v-show="!isBeingHovered">{{ name }}</h3>
 
-            <ul class="image-list">
+            <ul class="image-list" v-show="!isBeingHovered">
                 <li v-for="icon in stack" :key="icon">
                     <img :src="icon" :alt="icon" class="stack-icon" />
                  </li>
             </ul>
       
     
-            <p class="description-p" v-html="description"></p>
+            <p v-show="!isBeingHovered" class="description-p" v-html="description"></p>
 
-            <nuxt-link :to="liveProject" target="_blank"><Button class="btnnn" text="See project"></Button></nuxt-link>
+            <nuxt-link v-show="isBeingHovered" :to="liveProject" target="_blank"><Button class="btnnn" text="See project"></Button></nuxt-link>
 
             
 
         </div>
+
+
        
        
 
@@ -30,7 +32,6 @@
 <script setup>
 
 import Button from './Button.vue';
-
 
 const props = defineProps({
     name: String,
@@ -43,12 +44,29 @@ const props = defineProps({
     liveProject: String,
 });
 
+let isBeingHovered = ref(false);
+
+// Method to handle mouseover event
+const handleMouseOver = () => {
+      isBeingHovered.value = true;
+    };
+
+    // Method to handle mouseout event
+    const handleMouseOut = () => {
+      isBeingHovered.value = false;
+    };
 
 
 
 </script>
 
 <style scoped>
+
+.text-side:hover h3,
+.text-side:hover .image-list,
+.text-side:hover .description-p {
+  visibility: hidden;
+}
 
 .btnnn{
     height: 3rem;
@@ -63,7 +81,7 @@ const props = defineProps({
     color: black;
     transition: all 0.5s ease-in;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -101,7 +119,6 @@ img{
     align-items: center;
     justify-content: space-around;
     padding: 2rem 2rem 0 0;
-    border-right: 1px solid white;
     word-wrap: break-word;
 }
 

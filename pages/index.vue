@@ -5,19 +5,25 @@
 
             <section class="hero">
 
-                <Name class="name" />
+                <h1><span class="federico">FEDERICO</span> <span class="barbieri">BARBIERI</span></h1>
 
-                <div class="messi-container">
+                <a :href="`#${scrollToElementId}`">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-name" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+                </a>
+
+                <div class="messi-container" :id="scrollToElementId">
         
-                    <img class="messi-image" src="/projectImgs/messi.png" alt="Project image">        
-
-                </div>    
-
-                <p class="about-p">
+                    <img class="messi-image" src="/projectImgs/messi.png" alt="Project image">
+                    
+                    <p class="about-p">
                     I'm a Frontend Developer with a background in advertising. <br>
                     I'm in my last semester at Københavns Erhvervsakademi (KEA) <br>
                     and currently doing an internship @ Waitly.dk
-                </p>
+                    </p>
+
+                </div>    
 
                 
 
@@ -57,7 +63,7 @@
                         liveProject="https://messiverse-omega.vercel.app/"
                 />
 
-                <ProjectCard 
+            <!--     <ProjectCard 
                         class="sakurai"  
                         name="Jimmy Sakurai" 
                         description="Meet the man who promised to emulate <br>his idol up to the last cell of his body. Meet Jimmy Sakurai." 
@@ -68,7 +74,7 @@
                         liveProject="https://newjimmy.netlify.app/"
                 />
 
-                <ProjectCard 
+                      <ProjectCard 
                         class="hogwarts" 
                         name="Magic Hackers"  
                         description="A dashboard for Dumbledore" 
@@ -77,7 +83,7 @@
                         border_top="none"
                         margin="0 10rem 10rem 2rem"
                         liveProject="https://federico-barbieri.github.io/hogwarts/"
-                />
+                /> -->
 
                 <ProjectCard 
                         class="edc" 
@@ -113,7 +119,14 @@ import Random from "../components/Random.vue";
 import Dog from "../components/Dog.vue";
 import NiceBackground from "../components/NiceBackground.vue";
 
+
+
+
 let stackArray = stack.stack;
+
+let scrollToElementId = 'messi-container'
+
+
 
 
 
@@ -151,31 +164,40 @@ main{
     flex-direction: row;
     align-items: center;
     height: 85vh;
-    width: 750vw;
+    width: 800vw;
     margin: auto 15rem auto 0;
     border-radius: 30px;
     padding: 2rem;
     
 }
 
+h1{
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+
+.arrow-name{
+    transform: scale(6);
+    margin-left: 5rem;
+}
+
 .messi-container{
-    width: auto;
-    height: auto;
+    width: 80vw;
+    height: 80vh;
     background-color: transparent;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     font-family: 'Raleway', sans-serif;
-    color: black;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 0rem 10rem;
 }
 
 .messi-image{
-    max-width: 80%;
+    max-width: 30%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;

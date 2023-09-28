@@ -35,7 +35,6 @@ img{
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-
 }
 
 </style>

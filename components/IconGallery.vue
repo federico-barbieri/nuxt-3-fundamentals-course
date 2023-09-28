@@ -1,7 +1,7 @@
 <template>
     <ul class="image-list">
     <li v-for="(image, index) in images" :key="index">
-      <img :src="image.path" :alt="image.name" class="stack-icon" />
+      <img data-tooltip="image.name" :src="image.path" :alt="image.name" class="stack-icon" />
     </li>
   </ul>
 </template>

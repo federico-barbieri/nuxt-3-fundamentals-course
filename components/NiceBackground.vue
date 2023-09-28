@@ -9,14 +9,6 @@
 
 <script setup>
 
-import { ref, onMounted } from 'vue';
-
-const loopingVideo = ref(null);
-
-onMounted(() => {
-      // Access the video element and play it
-      loopingVideo.value.play();
-    });
 
 
 </script>
