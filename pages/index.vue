@@ -49,7 +49,7 @@
                         border_bottom="none"
                         border_top="1px solid white"
                         margin="10rem 10rem 2rem 2rem"
-                        liveProject="https://swampfest.vercel.app/"
+                        liveProject="/swampfest"
                 />
 
                 <ProjectCard 
@@ -124,7 +124,7 @@ import NiceBackground from "../components/NiceBackground.vue";
 
 let stackArray = stack.stack;
 
-let scrollToElementId = 'messi-container'
+let scrollToElementId = 'messi-container';
 
 
 
@@ -178,11 +178,11 @@ h1{
 
 .arrow-name{
     transform: scale(6);
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
 
 .messi-container{
-    width: 80vw;
+    width: 90vw;
     height: 80vh;
     background-color: transparent;
     border-bottom-left-radius: 30px;

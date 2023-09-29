@@ -16,7 +16,7 @@
     
             <p v-show="!isBeingHovered" class="description-p" v-html="description"></p>
 
-            <nuxt-link v-show="isBeingHovered" :to="liveProject" target="_blank"><Button class="btnnn" text="See project"></Button></nuxt-link>
+            <nuxt-link v-show="isBeingHovered" :to="liveProject"><Button class="btnnn" text="See project"></Button></nuxt-link>
 
             
 
