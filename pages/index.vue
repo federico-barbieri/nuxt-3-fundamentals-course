@@ -44,7 +44,7 @@
                 <ProjectCard 
                         class="swampfest" 
                         name="SwampFest"  
-                        description="The best festival in the world" 
+                        description="Experience the first Shrek-themed music festival in the world.<br> Get your tickets, add-ons and much more in this 7-day festival." 
                         :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
                         border_bottom="none"
                         border_top="1px solid white"
@@ -63,32 +63,10 @@
                         liveProject="https://messiverse-omega.vercel.app/"
                 />
 
-            <!--     <ProjectCard 
-                        class="sakurai"  
-                        name="Jimmy Sakurai" 
-                        description="Meet the man who promised to emulate <br>his idol up to the last cell of his body. Meet Jimmy Sakurai." 
-                        :stack="['/icons/openai.png', '/icons/js.svg', '/icons/ps.svg']"
-                        border_bottom="none"
-                        border_top="1px solid white"
-                        margin="10rem 10rem 2rem 2rem"
-                        liveProject="https://newjimmy.netlify.app/"
-                />
-
-                      <ProjectCard 
-                        class="hogwarts" 
-                        name="Magic Hackers"  
-                        description="A dashboard for Dumbledore" 
-                        :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/js.svg']"
-                        border_bottom="1px solid white"
-                        border_top="none"
-                        margin="0 10rem 10rem 2rem"
-                        liveProject="https://federico-barbieri.github.io/hogwarts/"
-                /> -->
-
                 <ProjectCard 
                         class="edc" 
                         name="EDC"  
-                        description="Find the house of your dreams" 
+                        description="Find the house of your dreams, whether it's an urban villa or a cottage in the countryside. <br>Pick your favorites and we will take care of the rest." 
                         :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
                         border_bottom="none"
                         border_top="1px solid white"
