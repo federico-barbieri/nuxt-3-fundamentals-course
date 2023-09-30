@@ -38,10 +38,11 @@
 
                 <IconGallery class="iconGallery" :images="stackArray" />
 
-                <h2 class="projects-title">PROJECTS</h2>
+                <h2 class="projects-title" id="projects">PROJECTS</h2>
 
 
                 <ProjectCard 
+                        id="swampfest-project"
                         class="swampfest" 
                         name="SwampFest"  
                         description="Experience the first Shrek-themed music festival in the world.<br> Get your tickets, add-ons and much more in this 7-day festival." 
@@ -89,12 +90,8 @@
 
 <script setup>
 
-import Button from "../components/Button.vue";
 import stack from "../assets/stack.json"
-import Name from "../components/Name.vue";
-import ProjectSquare from "../components/ProjectSquare.vue";
 import Random from "../components/Random.vue";
-import Dog from "../components/Dog.vue";
 import NiceBackground from "../components/NiceBackground.vue";
 
 
@@ -105,12 +102,11 @@ let stackArray = stack.stack;
 let scrollToElementId = 'messi-container';
 
 
-
-
-
 </script>
 
 <style scoped>
+
+
 
 a{
     color: inherit;
