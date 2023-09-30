@@ -127,29 +127,23 @@
                 </div>
 
                 <div class="last-section">
-
-                    <div class="live-website-div">
-
                         
                         <nuxt-link to="https://swampfest.vercel.app/" target="_blank">  
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right see-website" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
                                 <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
                             </svg>
                         </nuxt-link>
 
                         <nuxt-link to="https://github.com/raptorp/foofest" target="_blank">
-                            <img class="github" src="/icons/github.png" alt="Github logo">
+                            <img class="github-link" src="/icons/github.png" alt="Github logo">
                         </nuxt-link>
 
                         <a :href="`/#${backToProjects}`">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left back-to-projects" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
                             </svg>
                         </a>
-
-                    </div>
-
 
 
 
@@ -441,6 +435,26 @@ h1{
 }
 
 /* LAST SECTION */
+
+.last-section{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.see-website{
+    transform: scale(2);
+}
+
+.github-link{
+    transform: scale(0.3);
+}
+
+.back-to-projects{
+    transform: scale(2);
+}
 
 
 </style>
