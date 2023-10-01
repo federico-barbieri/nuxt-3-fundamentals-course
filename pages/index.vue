@@ -55,6 +55,17 @@
 
                 <ProjectCard 
                         class="messiverse"  
+                        name="Advertising" 
+                        description="Over the years, I have worked with<br>many different brands in international multimedia campaigns.<br>Take a look at some of my work." 
+                        :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/ae.png']"
+                        border_bottom="1px solid white"
+                        border_top="none"
+                        margin="0 10rem 10rem 2rem"
+                        liveProject="https://messiverse-omega.vercel.app/"
+                />
+
+            <!--    <ProjectCard 
+                        class="messiverse"  
                         name="Messiverse" 
                         description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
                         :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
@@ -63,6 +74,8 @@
                         margin="0 10rem 10rem 2rem"
                         liveProject="https://messiverse-omega.vercel.app/"
                 />
+
+                -->
 
                 <ProjectCard 
                         class="edc" 
