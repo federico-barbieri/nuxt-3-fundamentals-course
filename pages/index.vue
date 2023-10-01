@@ -18,9 +18,7 @@
                     <img class="messi-image" src="/projectImgs/messi.png" alt="Project image">
                     
                     <p class="about-p">
-                    I'm a Frontend Developer with a background in advertising. <br>
-                    I'm in my last semester at Københavns Erhvervsakademi (KEA) <br>
-                    and currently doing an internship @ Waitly.dk
+                    I'm a multimedia design student at KEA <br>with a focus in frontend design and a background in advertising. 
                     </p>
 
                 </div>    
@@ -61,7 +59,7 @@
                         border_bottom="1px solid white"
                         border_top="none"
                         margin="0 10rem 10rem 2rem"
-                        liveProject="https://messiverse-omega.vercel.app/"
+                        liveProject="/advertising"
                 />
 
             <!--    <ProjectCard 
@@ -211,7 +209,7 @@ h2{
     height: 50%;
     line-height: 2;
     display: flex;
-    align-items: center;
+    text-align: left;
 }
 
 
