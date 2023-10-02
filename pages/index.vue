@@ -415,10 +415,10 @@ h2{
     justify-content: center;
     margin: 1rem 0 0rem 0rem;
 }
-  .intro h1 {
+h1{
     font-size: 5rem;
-    margin-bottom: 5rem;
-  }
+    margin-bottom: 1rem;
+}
   .arrow-name{
     transform: scale(4);
     margin-left: 0rem;
