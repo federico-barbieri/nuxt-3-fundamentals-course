@@ -20,11 +20,7 @@
 
             
 
-        </div>
-
-
-       
-       
+        </div>     
 
     </div>
 </template>
@@ -149,5 +145,97 @@ img{
     line-height: 2;
     text-align: center;
 }
+
+
+@media screen and (max-width: 767px) {
+    .text-side:hover h3,
+.text-side:hover .image-list,
+.text-side:hover .description-p {
+  visibility: visible;
+}
+    .btnnn{
+    height: 3rem;
+    margin: 2rem auto;
+}
+
+
+
+.project-card{
+    width: 95%;
+    height: auto;
+    color: black;
+    transition: all 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 2rem auto 0 auto !important;
+    border: 2px solid red;
+}
+
+
+h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.img-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 5px black);
+    margin: 0 auto 0 auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.text-side{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    word-wrap: break-word;
+}
+
+.image-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  width: 100%;
+  place-items: center;
+}
+
+.stack-icon{
+    width: 5rem;
+    height: auto;
+    filter: drop-shadow(5px 5px 3px var(--dark-slate));
+    transition: all 0.5s ease-in;
+}
+
+.stack-icon:hover{
+  transform: scale(1.1);
+}
+
+.description-p{
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+    line-height: 2;
+    text-align: center;
+}
+}
+
 
 </style>

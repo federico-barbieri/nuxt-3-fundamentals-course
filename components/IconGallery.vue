@@ -34,4 +34,14 @@ const props = defineProps({
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 767px) {
+  .image-list{
+    margin: 0 auto;
+    place-content: center;
+    place-items: space-evenly;
+    gap: 0px;
+  }
+
+}
+
 </style>

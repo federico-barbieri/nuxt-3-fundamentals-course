@@ -243,7 +243,8 @@ h1{
 }
 
 .messi-image{
-    max-width: 30%;
+    max-width: 50%;
+    min-width: 50%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -402,7 +403,7 @@ h2{
 }
 
 .intro{
-    width: 100%;
+    width: 90%;
     height: 80vh;
     background-color: transparent;
     border-bottom-left-radius: 0;
@@ -416,25 +417,25 @@ h2{
     margin: 1rem 0 0rem 0rem;
 }
 h1{
-    font-size: 5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
   .arrow-name{
-    transform: scale(4);
+    transform: scale(2);
     margin-left: 0rem;
     display: none;
 }
 
 .arrow-name-down{
-    transform: scale(4);
+    transform: scale(2);
     margin: 0;
     display: inline;
 }
 
 .messi-container{
-    border: 2px solid white;
+    border: 1px solid white;
     width: 95%;
-    height: 80vh;
+    height: auto;
     background-color: transparent;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -449,6 +450,18 @@ h1{
 
 .messi-image{
     max-width: 100%;
+}
+
+
+.about-p{
+    font-size: 1.5rem;
+    margin: 0rem auto;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
 }
 
 
@@ -486,6 +499,7 @@ h1{
   .mondrian-container {
     border: 2px solid white;
     width: 95%;
+    height: auto;
     margin: 2rem auto;
     padding: 0;
     text-align: center;
@@ -503,13 +517,18 @@ h1{
   .projects-title {
     writing-mode: horizontal-tb;
     font-size: 3rem;
-    margin-top: 5rem;
+    margin: 5rem auto 0 auto;
   }
-  .iconGallery {
+
+
+  .iconGallery{
     margin: 5rem auto;
-  }
+    width: 100%;
+}
   .contact-title {
-    font-size: 2rem;
+    writing-mode: horizontal-tb;
+    font-size: 3rem;
+    margin: 5rem auto 0 auto;
   }
 
   .contact-p {
