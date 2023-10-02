@@ -9,8 +9,8 @@
             loop
             style="max-width: 100%;"
         >
-        <source src="/random/mondrian-2.webm" type="video/webm">
-  </video>
+         <source src="/random/mondrian-2.webm" type="video/webm">
+        </video>
 
     </div>
 </template>
@@ -31,7 +31,7 @@ onMounted(() => {
 
 <style scoped>
 
-.container{
+.mondrian-container{
     width: 30rem;
     height: 15rem;
     background-color: rgb(74,64,44);

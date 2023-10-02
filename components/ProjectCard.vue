@@ -77,7 +77,7 @@ const handleMouseOver = () => {
 
 .project-card{
     width: 50rem;
-    height: 70%;
+    height: 30rem;
     color: black;
     transition: all 0.5s ease-in;
     display: flex;

@@ -37,7 +37,6 @@
     height: auto;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
-
 }
 
 </style>
