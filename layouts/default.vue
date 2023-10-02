@@ -112,6 +112,12 @@ ul > li:hover {
     justify-content: center;
 }
 
+.arrow-logo{
+    transform: scale(3);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
 .logo:hover .arrow-logo{
         opacity: 1;
         margin: 0 0 0 4rem;
@@ -125,12 +131,6 @@ ul > li:hover {
     transform: translateX(2rem);
 }
 
-.arrow-logo{
-    transform: scale(3);
-    opacity: 0;
-    transition: all 0.5s ease-in;
-}
-
 
 
 .f{
@@ -140,8 +140,27 @@ ul > li:hover {
     transition: all 0.5s ease-in;
 }
 
-.f:hover{
-    
+
+@media screen and (max-width: 767px) {
+  
+nav > ul{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    display: none;
+}
+
+nav > .logo{
+    width: 100%;
+}
+
+
+
+
 }
 
 

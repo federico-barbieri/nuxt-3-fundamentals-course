@@ -5,13 +5,23 @@
 
             <section class="hero">
 
-                <h1><span class="federico">FEDERICO</span> <span class="barbieri">BARBIERI</span></h1>
+                <section class="intro">
 
-                <a :href="`#${scrollToElementId}`">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-name" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
-                </a>
+                        <h1><span class="federico">FEDERICO</span> <span class="barbieri">BARBIERI</span></h1>
+
+                        <a :href="`#${scrollToElementId}`">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-name" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down arrow-name-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                        </svg>
+
+                        </a>
+
+
+                </section>
 
                 <div class="messi-container" :id="scrollToElementId">
         
@@ -104,7 +114,7 @@
                 /> -->
 
                 <h2 class="contact-title">CONTACT</h2>
-                <p>Let's get in touch and start something memorable together.</p>
+                <p class="contact-p">Let's get in touch and start something memorable together.</p>
 
                
             </section>
@@ -182,7 +192,21 @@ main{
     margin: auto 15rem auto 0;
     border-radius: 30px;
     padding: 2rem;
-    
+}
+
+.intro{
+    width: 90vw;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 5rem;
 }
 
 h1{
@@ -193,6 +217,12 @@ h1{
 .arrow-name{
     transform: scale(6);
     margin-left: 7rem;
+}
+
+.arrow-name-down{
+    transform: scale(6);
+    margin-left: 7rem;
+    display: none;
 }
 
 /* messi container */
@@ -340,6 +370,213 @@ h2{
     backface-visibility: hidden;
     color: black;
     font-weight: 700;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    main{
+    width: 100vw;
+    height: auto;
+    color: var(--near-white);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space:initial; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling when needed */
+    overflow-y: auto;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.intro{
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0rem;
+}
+  .intro h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+  .arrow-name{
+    transform: scale(4);
+    margin-left: 0rem;
+    display: none;
+}
+
+.arrow-name-down{
+    transform: scale(4);
+    margin: 0;
+    display: inline;
+}
+
+.messi-container{
+    border: 2px solid white;
+    width: 95%;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem;
+}
+
+.messi-image{
+    max-width: 100%;
+}
+
+
+/* medieval container */
+
+.medieval-container{
+    border: 2px solid white;
+    width: 95%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0rem;
+}
+
+.medieval-background{
+    max-width: 100%;
+    height: auto;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: scale(1);
+}
+
+
+
+
+
+
+  .mondrian-container {
+    border: 2px solid white;
+    width: 95%;
+    margin: 2rem auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mondrian {
+    max-width: 100%;
+  }
+  .about-p,
+  .medieval-p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 90%;
+  }
+  .projects-title {
+    writing-mode: horizontal-tb;
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .iconGallery {
+    margin: 5rem auto;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 95%;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    main{
+    width: 100vw;
+    height: auto;
+    color: var(--near-white);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space:initial; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling when needed */
+    overflow-y: auto;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.intro{
+    width: 90vw;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0 0rem 0rem;
+}
+  .intro h1 {
+    font-size: 5rem;
+  }
+  .arrow-name{
+    transform: scale(4);
+    margin-left: 0rem;
+    display: none;
+}
+
+.arrow-name-down{
+    transform: scale(4);
+    margin-bottom: 7rem;
+    display: inline;
+}
+  /* ... other tablet styles ... */
 }
 
 
