@@ -27,8 +27,8 @@
         
                     <img class="messi-image" src="/projectImgs/messi.png" alt="Project image">
                     
-                    <p class="about-p">
-                    I'm a multimedia design student at KEA <br>with a focus in frontend design and a background in advertising. 
+                    <p class="messi-p">
+                    I'm a multimedia design student at KEA with a focus in frontend design and a background in advertising. 
                     </p>
 
                 </div>    
@@ -38,26 +38,12 @@
                         <img class="medieval-background" src="/random/nice-background.webp" alt="Project image">
                         
                         <p class="medieval-p">
-                        I enjoy trying out new tools that spark my curiosity <br>
+                        I enjoy trying out new tools that spark my curiosity
                         and enhance my ideas.
                         </p>
 
                 </div>  
 
-                <div class="mondrian-container">
-        
-                    <video
-                        class="mondrian"
-                        ref="loopingVideo"
-                        autoplay
-                        muted
-                        loop
-                    >
-                         <source src="/random/mondrian-2.webm" type="video/webm">
-                    </video>
-                    
-
-                </div> 
 
                 <IconGallery class="iconGallery" :images="stackArray" />
 
@@ -66,7 +52,7 @@
                 <ProjectCard 
                         class="messiverse"  
                         name="Advertising" 
-                        description="Over the years, I have worked with<br>many different brands in international multimedia campaigns.<br>Take a look at some of my work." 
+                        description="Over the years, I have worked with many different brands in international multimedia campaigns. Take a look at some of my work." 
                         :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/ae.png']"
                         border_bottom="1px solid white"
                         border_top="none"
@@ -79,7 +65,7 @@
                         id="swampfest-project"
                         class="swampfest" 
                         name="SwampFest"  
-                        description="Experience the first Shrek-themed music festival in the world.<br> Get your tickets, add-ons and much more in this 7-day festival." 
+                        description="Experience the first Shrek-themed music festival in the world. Get your tickets, add-ons and much more in this 7-day festival." 
                         :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
                         border_bottom="none"
                         border_top="1px solid white"
@@ -265,14 +251,15 @@ h2{
     margin: 0 5vw;
 }
 
-.about-p{
+.messi-p{
     font-size: 1.5rem;
-    margin: 0rem 0 0 2rem;
-    width: 40rem;
+    max-width: 50%;
     height: 50%;
     line-height: 2;
     display: flex;
     text-align: left;
+    white-space: normal;
+
 }
 
 /* medieval container */
@@ -286,10 +273,10 @@ h2{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 1rem 0 0rem 10rem;
+    margin: 1rem 5rem;
 }
 
 .medieval-background{
@@ -302,12 +289,11 @@ h2{
 
 .medieval-p{
     font-size: 1.5rem;
-    margin: 0rem 0 0 2rem;
-    width: 40rem;
+    max-width: 50%;
     height: 50%;
-    line-height: 2;
-    display: flex;
     text-align: left;
+    white-space: normal;
+
 }
 
 /* mondrian container */
@@ -324,6 +310,7 @@ h2{
     align-items: center;
     justify-content: center;
     margin: 1rem 0 0rem 10rem;
+    
 }
 
 .mondrian{
@@ -459,10 +446,9 @@ h1{
 }
 
 
-.about-p{
-    font-size: 1.5rem;
-    margin: 0rem auto;
-    max-width: 80%;
+.messi-p{
+    font-size: 1rem;
+    max-width: 100%;
     height: auto;
     line-height: 2;
     display: block;
@@ -498,23 +484,18 @@ h1{
     transform: scale(1);
 }
 
-  .mondrian-container {
-    width: 95%;
-    height: auto;
-    margin: 2rem auto;
-    padding: 0;
-    text-align: center;
-  }
-
-  .mondrian {
-    max-width: 100%;
-  }
-  .about-p,
-  .medieval-p {
+.medieval-p{
     font-size: 1rem;
-    margin: 1rem 0;
-    width: 90%;
-  }
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
+
+  
   .projects-title {
     writing-mode: horizontal-tb;
     font-size: 5rem;
@@ -652,15 +633,15 @@ h1{
 }
 
 
-.about-p{
-    font-size: 1.5rem;
-    margin: 0rem auto;
+.messi-p{
+    font-size: 1rem;
     max-width: 100%;
     height: auto;
     line-height: 2;
     display: block;
     text-align: left;
-    padding: 0 0 2rem 1rem;
+    padding: 0 0 0rem 2rem;
+    margin: 3rem auto;
 }
 
 
@@ -691,24 +672,16 @@ h1{
     transform: scale(1);
 }
 
-  .mondrian-container {
-    border: 2px solid white;
-    width: 95%;
-    height: auto;
-    margin: 2rem auto;
-    padding: 0;
-    text-align: center;
-  }
-
-  .mondrian {
-    max-width: 100%;
-  }
-  .about-p,
-  .medieval-p {
+.medieval-p{
     font-size: 1rem;
-    margin: 1rem 0;
-    width: 90%;
-  }
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
   .projects-title {
     writing-mode: horizontal-tb;
     font-size: 3rem;

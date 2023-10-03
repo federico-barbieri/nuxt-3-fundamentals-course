@@ -14,7 +14,7 @@
             </ul>
       
     
-            <p class="description-p" v-html="description"></p>
+            <p class="description-p">{{ description }}</p>
 
             <nuxt-link :to="liveProject"><Button class="btnnn" text="See project"></Button></nuxt-link>
 
@@ -128,9 +128,10 @@ img{
 .description-p{
     font-size: 1rem;
     height: 30%;
-    width: 100%;
+    max-width: 80%;
     line-height: 2;
-    text-align: center;
+    text-align: left;
+    white-space: normal;
 }
 
 
@@ -213,10 +214,12 @@ img{
 
 .description-p{
     font-size: 1rem;
-    height: auto;
-    width: 100%;
+    height: 30%;
+    max-width: 100%;
     line-height: 2;
-    text-align: center;
+    text-align: left;
+    white-space: normal;
+    margin: 3rem auto;
 }
 }
 
@@ -246,6 +249,15 @@ img{
 h3{
     font-size: 2rem;
     margin: 2rem auto;
+}
+.description-p{
+    font-size: 1rem;
+    height: 30%;
+    max-width: 50%;
+    line-height: 2;
+    text-align: left;
+    white-space: normal;
+    margin: 3rem auto;
 }
 }
 
