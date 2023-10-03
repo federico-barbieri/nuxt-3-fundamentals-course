@@ -113,8 +113,15 @@
                         
                 /> -->
 
-                <h2 class="contact-title">CONTACT</h2>
-                <p class="contact-p">Let's get in touch and start something memorable together.</p>
+                <div class="contact-container">
+        
+                    <h2 class="contact-title">CONTACT</h2>
+                    <p class="contact-p">Let's get in touch and start something memorable together.</p>
+                
+
+            </div> 
+
+               
 
                
             </section>
@@ -339,37 +346,34 @@ h2{
     margin-right: 10rem;
 }
 
+
+.contact-container{
+    width: 90vw;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5rem;
+}
+
 .contact-title{
     
     text-decoration: overline;
 }
 
 .swampfest{
-    transition: all 0.5s ease-in;
-}
-
-.swampfest:hover{
-    background-image: url('/projectImgs/festival1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: hidden;
-    color: black;
+    color: white;
     font-weight: 700;
 }
 
-
 .messiverse{
-    transition: all 0.5s ease-in;
-}
-
-.messiverse:hover{
-    background-image: url('/messi/xul1.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: hidden;
-    color: black;
+    color: white;
     font-weight: 700;
 }
 
@@ -468,7 +472,6 @@ h1{
 /* medieval container */
 
 .medieval-container{
-    border: 2px solid white;
     width: 95%;
     height: auto;
     background-color: transparent;
@@ -480,21 +483,18 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 0rem 0rem;
+    margin: 5rem 0 5rem 0rem;
 }
 
 .medieval-background{
     max-width: 100%;
     height: auto;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     transform: scale(1);
 }
-
-
-
-
-
 
   .mondrian-container {
     border: 2px solid white;
@@ -516,7 +516,7 @@ h1{
   }
   .projects-title {
     writing-mode: horizontal-tb;
-    font-size: 3rem;
+    font-size: 5rem;
     margin: 5rem auto 0 auto;
   }
 
@@ -524,6 +524,34 @@ h1{
   .iconGallery{
     margin: 5rem auto;
     width: 100%;
+}
+
+.swampfest{
+    color: white;
+    font-weight: 700;
+    margin: 3rem auto;
+
+}
+
+.messiverse{
+    color: white;
+    font-weight: 700;
+    margin: 3rem auto;
+}
+
+.contact-container{
+    width: 90vw;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
 }
   .contact-title {
     writing-mode: horizontal-tb;
@@ -568,7 +596,7 @@ h1{
 }
 
 .intro{
-    width: 90vw;
+    width: 90%;
     height: 80vh;
     background-color: transparent;
     border-bottom-left-radius: 0;
@@ -578,24 +606,152 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 1rem 0 0rem 0rem;
 }
-  .intro h1 {
+h1{
     font-size: 5rem;
-  }
+    margin-bottom: 2rem;
+}
   .arrow-name{
-    transform: scale(4);
+    transform: scale(3);
     margin-left: 0rem;
     display: none;
 }
 
 .arrow-name-down{
-    transform: scale(4);
-    margin-bottom: 7rem;
+    transform: scale(3);
+    margin: 0;
     display: inline;
 }
-  /* ... other tablet styles ... */
+
+.messi-container{
+    border: 1px solid white;
+    width: 95%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.messi-image{
+    max-width: 100%;
+}
+
+
+.about-p{
+    font-size: 1.5rem;
+    margin: 0rem auto;
+    max-width: 80%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+}
+
+
+/* medieval container */
+
+.medieval-container{
+    width: 95%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.medieval-background{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+  .mondrian-container {
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mondrian {
+    max-width: 100%;
+  }
+  .about-p,
+  .medieval-p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 90%;
+  }
+  .projects-title {
+    writing-mode: horizontal-tb;
+    font-size: 5rem;
+    margin: 5rem auto 0 auto;
+  }
+
+
+  .iconGallery{
+    margin: 5rem auto;
+    width: 100%;
+}
+
+.swampfest{
+    color: white;
+    font-weight: 700;
+    margin: 3rem auto;
+
+}
+
+.messiverse{
+    color: white;
+    font-weight: 700;
+    margin: 3rem auto;
+}
+
+.contact-container{
+    width: 90vw;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+  .contact-title {
+    writing-mode: horizontal-tb;
+    font-size: 5rem;
+    margin: 5rem auto 0 auto;
+  }
+
+  .contact-p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 95%;
+  }
 }
 
 

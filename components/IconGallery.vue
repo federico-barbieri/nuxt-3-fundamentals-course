@@ -21,6 +21,10 @@ const props = defineProps({
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
+  margin: 0 auto;
+    place-content: center;
+    place-items: space-evenly;
+    gap: 0px;
 }
 
 .stack-icon{
@@ -42,6 +46,17 @@ const props = defineProps({
     gap: 0px;
   }
 
+}
+
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .image-list{
+    margin: 0 auto;
+    place-content: center;
+    place-items: center;
+    gap: 0px;
+  }
 }
 
 </style>

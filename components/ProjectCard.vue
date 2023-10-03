@@ -1,22 +1,22 @@
 <template>
-    <div class="project-card" :style="{ 'margin': margin}" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
+    <div class="project-card" :style="{ 'margin': margin}">
 
         
 
         <div class="text-side" :style="{ 'border-top': border_top, 'border-bottom': border_bottom}">
 
-            <h3 v-show="!isBeingHovered">{{ name }}</h3>
+            <h3>{{ name }}</h3>
 
-            <ul class="image-list" v-show="!isBeingHovered">
+            <ul class="image-list">
                 <li v-for="icon in stack" :key="icon">
                     <img :src="icon" :alt="icon" class="stack-icon" />
                  </li>
             </ul>
       
     
-            <p v-show="!isBeingHovered" class="description-p" v-html="description"></p>
+            <p class="description-p" v-html="description"></p>
 
-            <nuxt-link v-show="isBeingHovered" :to="liveProject"><Button class="btnnn" text="See project"></Button></nuxt-link>
+            <nuxt-link :to="liveProject"><Button class="btnnn" text="See project"></Button></nuxt-link>
 
             
 
@@ -40,17 +40,6 @@ const props = defineProps({
     liveProject: String,
 });
 
-let isBeingHovered = ref(false);
-
-// Method to handle mouseover event
-const handleMouseOver = () => {
-      isBeingHovered.value = true;
-    };
-
-    // Method to handle mouseout event
-    const handleMouseOut = () => {
-      isBeingHovered.value = false;
-    };
 
 
 
@@ -58,15 +47,10 @@ const handleMouseOver = () => {
 
 <style scoped>
 
-.text-side:hover h3,
-.text-side:hover .image-list,
-.text-side:hover .description-p {
-  visibility: hidden;
-}
-
 .btnnn{
     height: 3rem;
     margin: 2rem auto;
+    width: 10rem;
 }
 
 
@@ -81,7 +65,6 @@ const handleMouseOver = () => {
     align-items: center;
     justify-content: space-between;
     color: white;
-    margin-right: 5rem;
 }
 
 
@@ -114,7 +97,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 2rem 0 0;
+    padding: 2rem 0rem 0 0;
     word-wrap: break-word;
 }
 
@@ -148,14 +131,11 @@ img{
 
 
 @media screen and (max-width: 767px) {
-    .text-side:hover h3,
-.text-side:hover .image-list,
-.text-side:hover .description-p {
-  visibility: visible;
-}
+
     .btnnn{
     height: 3rem;
     margin: 2rem auto;
+    width: 10rem;
 }
 
 
@@ -171,7 +151,6 @@ img{
     justify-content: space-between;
     color: white;
     margin: 2rem auto 0 auto !important;
-    border: 2px solid red;
 }
 
 
@@ -234,6 +213,35 @@ img{
     width: 100%;
     line-height: 2;
     text-align: center;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .project-card{
+    width: 95%;
+    height: auto;
+    color: black;
+    transition: all 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 2rem auto 0 auto !important;
+    text-align: center;
+}
+.image-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+h3{
+    font-size: 2rem;
+    margin: 2rem auto;
 }
 }
 
