@@ -42,7 +42,7 @@ const props = defineProps({
   .image-list{
     margin: 0 auto;
     place-content: center;
-    place-items: space-evenly;
+    place-items: center;
     gap: 0px;
   }
 
