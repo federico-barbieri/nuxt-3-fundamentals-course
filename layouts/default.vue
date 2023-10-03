@@ -8,7 +8,7 @@
             </svg>
             <span class="f"><nuxt-link to="/">FB</nuxt-link></span>
             </div>
-            <ul>
+            <ul class="icons-ul">
                 <li><nuxt-link to="https://www.linkedin.com/in/fedebarbieri/" target="_blank"><img class="linkedin" src="/icons/linkedin.png" alt="LinkedIn logo"></nuxt-link></li>
                 <li><nuxt-link to="https://github.com/federico-barbieri" target="_blank"><img class="github" src="/icons/github.png" alt="Github logo"></nuxt-link></li>
             </ul>
@@ -30,6 +30,11 @@ export default {
 </script>
 
 <style scoped>
+
+ul{
+  padding-inline-start: 0;
+  justify-content: center;
+}
 
 a{
     color: inherit;
@@ -140,22 +145,167 @@ ul > li:hover {
     transition: all 0.5s ease-in;
 }
 
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1300px){
 
-@media screen and (max-width: 767px) {
-  
+header{
+width: 100vw;
+height: 15vh;
+background-color: var(--primary-blue);
+background-color: rgb(17,17,17);
+color: var(--near-white);
+font-family: "Roboto", sans-serif;
+border: 1px solid green;
+position: fixed;
+z-index: 1000;
+
+}
+
+nav{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+font-size: 1.5rem;
+background-color: rgba(255, 255, 255, 0.01);
+border: 1px solid yellow;
+}
+
+
+
 nav > ul{
-    width: 20%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    display: none;
+    width: 70%;
+height: 80%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+list-style-type: none;
+border: 1px solid red;
 }
 
 nav > .logo{
-    width: 100%;
+width: 20%;
+
+}
+
+.arrow-logo{
+transform: scale(3);
+opacity: 0;
+transition: all 0.5s;
+display: none;
+}
+
+
+ul > li {
+transition: all 0.5s ease-in;
+transform: scale(0.2);
+}
+
+
+
+.linkedin{
+transform: scale(0.7);
+transition: all 0.5s ease-in
+}
+
+.linkedin:hover{
+transform: scale(0.8);
+}
+
+.github{
+transform: scale(1);
+transition: all 0.5s ease-in;
+}
+
+.github:hover{
+transform: scale(1.1);
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+        header{
+        width: 100vw;
+        height: 15vh;
+        background-color: var(--primary-blue);
+        background-color: rgb(17,17,17);
+        color: var(--near-white);
+        font-family: "Roboto", sans-serif;
+        border: 1px solid green;
+        position: fixed;
+        z-index: 1000;
+
+        }
+
+    nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.01);
+        border: 1px solid yellow;
+    }
+
+   
+  
+    .icons-ul{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0 1rem 0 0;
+        border: 1px solid red;
+    }
+
+    nav > .logo{
+        width: 30%;
+        display: none;
+    
+    }
+
+    .arrow-logo{
+        transform: scale(3);
+        opacity: 0;
+        transition: all 0.5s;
+        display: none;
+    }
+
+
+ul > li {
+    transition: all 0.5s ease-in;
+    transform: scale(0.2);
+
+}
+
+
+
+.linkedin{
+    transform: scale(0.7);
+    transition: all 0.5s ease-in
+}
+
+.linkedin:hover{
+    transform: scale(0.8);
+}
+
+.github{
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+}
+
+.github:hover{
+    transform: scale(1.1);
 }
 
 

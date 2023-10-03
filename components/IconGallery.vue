@@ -22,13 +22,16 @@ const props = defineProps({
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
   margin: 0 auto;
-    place-content: center;
-    place-items: space-evenly;
-    gap: 0px;
+  place-content: center;
+  gap: 0px;
+}
+
+ul{
+  padding-inline-start: 0;
 }
 
 .stack-icon{
-    width: 5rem;
+    max-width: 5rem;
     height: auto;
     filter: drop-shadow(10px 10px 3px var(--dark-slate));
     transition: all 0.5s ease-in;
@@ -38,25 +41,40 @@ const props = defineProps({
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 767px) {
-  .image-list{
-    margin: 0 auto;
-    place-content: center;
-    place-items: center;
-    gap: 0px;
-  }
-
-}
-
-
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   .image-list{
     margin: 0 auto;
-    place-content: center;
     place-items: center;
     gap: 0px;
+
+    list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+  margin: 0 auto;
+  place-content: center;
+  gap: 0px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .image-list{
+    margin: 0 auto;
+    place-items: center;
+    gap: 0px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  }
+  .stack-icon{
+    max-width: 4rem;
+    height: auto;
+    filter: drop-shadow(10px 10px 3px var(--dark-slate));
+    transition: all 0.5s ease-in;
+}
+
+}
+
 
 </style>

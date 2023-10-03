@@ -47,6 +47,10 @@ const props = defineProps({
 
 <style scoped>
 
+ul{
+  padding-inline-start: 0;
+}
+
 .btnnn{
     height: 3rem;
     margin: 2rem auto;
