@@ -711,7 +711,7 @@ h1{
   }
   .projects-title {
     writing-mode: horizontal-tb;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 5rem auto 0 auto;
   }
 

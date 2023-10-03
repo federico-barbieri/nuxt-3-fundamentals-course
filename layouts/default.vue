@@ -155,7 +155,6 @@ background-color: var(--primary-blue);
 background-color: rgb(17,17,17);
 color: var(--near-white);
 font-family: "Roboto", sans-serif;
-border: 1px solid green;
 position: fixed;
 z-index: 1000;
 
@@ -170,7 +169,6 @@ align-items: center;
 justify-content: space-between;
 font-size: 1.5rem;
 background-color: rgba(255, 255, 255, 0.01);
-border: 1px solid yellow;
 }
 
 
@@ -183,7 +181,6 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 list-style-type: none;
-border: 1px solid red;
 }
 
 nav > .logo{
@@ -236,7 +233,6 @@ transform: scale(1.1);
         background-color: rgb(17,17,17);
         color: var(--near-white);
         font-family: "Roboto", sans-serif;
-        border: 1px solid green;
         position: fixed;
         z-index: 1000;
 
@@ -251,7 +247,6 @@ transform: scale(1.1);
         justify-content: center;
         font-size: 1.5rem;
         background-color: rgba(255, 255, 255, 0.01);
-        border: 1px solid yellow;
     }
 
    
@@ -265,7 +260,6 @@ transform: scale(1.1);
         justify-content: center;
         list-style-type: none;
         margin: 0 1rem 0 0;
-        border: 1px solid red;
     }
 
     nav > .logo{
