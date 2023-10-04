@@ -864,7 +864,7 @@ h1{
 }
 
 .title-container{
-    width: 90%;
+    width: 100%;
     height: 80vh;
     background-color: transparent;
     border-bottom-left-radius: 0;
@@ -878,7 +878,7 @@ h1{
     margin: 1rem 0 0rem 0rem;
 }
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0 0 2rem 0;
 }
   .arrow-name{
