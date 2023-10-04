@@ -20,6 +20,10 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-name" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down arrow-name-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                        </svg>
                     </a>
 
 
@@ -32,8 +36,8 @@
         
                     <img class="burger-image" src="/advertising/run.gif" alt="Gif of a running dog">
                     
-                    <p>
-                    After a decade of experience working with international brands,<br>
+                    <p class="burger-p">
+                    After a decade of experience working with international brands,
                     there is one thing I'm certain: <br><br>
                     <i>It's not a sprint. It´s a marathon.</i>
                     </p>
@@ -46,9 +50,9 @@
 
                     <img class="schedule-image" src="/advertising/ad-print.png" alt="Print advertising for Heisenberg and for Volkswagen">
 
-                    <p>
-                    No two days are the same. <br>
-                    One day can involve coming up with a print ad for an optical shop.<br>
+                    <p class="schedule-p">
+                    No two days are the same.
+                    One day can involve coming up with a print ad for an optical shop.
                     Another day can be about a digital campaign for Volkswagen.
                     </p>
 
@@ -61,7 +65,7 @@
 
                     <img class="bands-image" src="/advertising/print-horizontal.jpg" alt="Print ads for champagne, cars and wines.">
 
-                    <p>
+                    <p class="bands-p">
                     The same can be said about brands.<br>
                     
                     </p>
@@ -75,7 +79,7 @@
 
                     <video class="tickets-image" src="/advertising/commercials-reel.mp4" controls alt="Commercials reel"></video>
 
-                    <p>
+                    <p class="tickets-p">
                     Check some of the highlights in my career.
                     </p>
 
@@ -86,16 +90,7 @@
 
                 <div class="last-section">
                         
-                        <nuxt-link to="https://swampfest.vercel.app/" target="_blank">  
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right see-website" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
-                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
-                            </svg>
-                        </nuxt-link>
 
-                        <nuxt-link to="https://github.com/raptorp/foofest" target="_blank">
-                            <img class="github-link" src="/icons/github.png" alt="Github logo">
-                        </nuxt-link>
 
                         <a :href="`/#${backToProjects}`">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left back-to-projects" viewBox="0 0 16 16">
@@ -146,13 +141,14 @@ a:visited{
 
 /* TEXT */
 
-p{
+.burger-p{
     font-size: 1.5rem;
     margin: 0rem 0 0 2rem;
-    width: 40rem;
-    height: 50%;
-    line-height: 2;
+    max-width: 50%;
+    height: auto;
+    line-height: 1.5;
     text-align: left;
+    white-space: normal;
 }
 
 /* MAIN */
@@ -261,6 +257,16 @@ h1{
     transform: scale(0.8);
 }
 
+.schedule-p{
+    font-size: 1.5rem;
+    margin: 0rem 0 0 2rem;
+    max-width: 50%;
+    height: 50%;
+    line-height: 2;
+    text-align: left;
+    white-space: normal;
+}
+
 
 /* BANDS CONTAINER */
 
@@ -287,6 +293,15 @@ h1{
     transform: scale(0.8);
 }
 
+.bands-p{
+    font-size: 1.5rem;
+    margin: 0rem 0 0 2rem;
+    width: 40rem;
+    height: 50%;
+    line-height: 2;
+    text-align: left;
+}
+
 
 /* TICKETS CONTAINER */
 
@@ -311,6 +326,15 @@ h1{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     transform: scale(0.8);
+}
+
+.tickets-p{
+    font-size: 1.5rem;
+    margin: 0rem 0 0 2rem;
+    width: 40rem;
+    height: 50%;
+    line-height: 2;
+    text-align: left;
 }
 
 
@@ -413,6 +437,456 @@ h1{
 .back-to-projects{
     transform: scale(2);
 }
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    main{
+    width: 100vw;
+    height: auto;
+    color: var(--near-white);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space:initial; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling when needed */
+    overflow-y: auto;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.title-container{
+    width: 90%;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0rem;
+}
+h1{
+    font-size: 5rem;
+    margin: 0 0 2rem 0;
+}
+  .arrow-name{
+    transform: scale(3);
+    margin-left: 0rem;
+    display: none;
+}
+
+.arrow-name-down{
+    transform: scale(3);
+    margin: 0;
+    display: inline;
+}
+
+.burger-container{
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.burger-image{
+    max-width: 100%;
+}
+
+
+.burger-p{
+    font-size: 1rem;
+    max-width: 70%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+}
+
+
+/* medieval container */
+
+.schedule-container{
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.schedule-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+
+
+.schedule-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
+
+.bands-container{
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.bands-image{
+    max-width: 100%;
+}
+
+
+.bands-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    padding: 0 0 2rem 1rem;
+    margin: 0 auto;
+}
+
+
+.tickets-container{
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.tickets-image{
+    max-width: 100%;
+}
+
+
+.tickets-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    padding: 0 0 2rem 1rem;
+    margin: 0 auto;
+}
+
+/* LAST SECTION */
+
+.last-section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.see-website{
+    transform: scale(2);
+}
+
+.github-link{
+    transform: scale(0.3);
+}
+
+.back-to-projects{
+    transform: scale(2);
+}
+}
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    main{
+    width: 100vw;
+    height: auto;
+    color: var(--near-white);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space:initial; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling when needed */
+    overflow-y: auto;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.title-container{
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0rem;
+}
+h1{
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+  .arrow-name{
+    transform: scale(3);
+    margin-left: 0rem;
+    display: none;
+}
+
+.arrow-name-down{
+    transform: scale(3);
+    margin: 0;
+    display: inline;
+}
+
+.burger-container{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.burger-image{
+    max-width: 90%;
+}
+
+
+.burger-p{
+    font-size: 1rem;
+    max-width: 80%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    white-space: normal;
+}
+
+
+/* medieval container */
+
+.schedule-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.schedule-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+
+
+.schedule-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
+
+.bands-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.bands-image{
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+
+.bands-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    padding: 0 0 2rem 1rem;
+    margin: 2rem auto;
+}
+
+
+.tickets-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.tickets-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+
+.tickets-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 2rem auto;
+}
+
+/* LAST SECTION */
+
+.last-section{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.see-website{
+    transform: scale(2);
+}
+
+.github-link{
+    transform: scale(0.3);
+}
+
+.back-to-projects{
+    transform: scale(2);
+}
+}
+
 
 
 </style>

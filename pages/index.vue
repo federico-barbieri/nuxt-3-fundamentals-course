@@ -121,18 +121,6 @@
 <script setup>
 
 import stack from "../assets/stack.json"
-import Random from "../components/Random.vue";
-
-import { ref, onMounted } from 'vue';
-
-// mondrian
-
-const loopingVideo = ref(null);
-
-onMounted(() => {
-      // Access the video element and play it
-      loopingVideo.value.play();
-    });
 
 
 // icon gallery
