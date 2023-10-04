@@ -415,7 +415,7 @@ h1{
 
 .messi-container{
     border: 1px solid white;
-    width: 95%;
+    width: 70%;
     height: auto;
     background-color: transparent;
     border-bottom-left-radius: 30px;
@@ -448,7 +448,7 @@ h1{
 /* medieval container */
 
 .medieval-container{
-    width: 95%;
+    width: 90%;
     height: auto;
     background-color: transparent;
     border-bottom-left-radius: 30px;
@@ -493,7 +493,7 @@ h1{
 
   .iconGallery{
     margin: 5rem auto;
-    width: 100%;
+    width: 70%;
     height: auto;
     place-items: center;
 }
