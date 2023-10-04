@@ -21,6 +21,10 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-name" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down arrow-name-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                        </svg>
                     </a>
 
 
@@ -33,9 +37,9 @@
         
                     <img class="burger-image" src="/swampfest-gifs/burger.gif" alt="Gif of burger menu display">
                     
-                    <p>
-                    This Shrek-inspired music festival<br>
-                    is the final project of my 3rd semester at KEA.<br>
+                    <p class="burger-p">
+                    This Shrek-inspired music festival
+                    is the final project of my 3rd semester at KEA.
                     </p>
 
                 </div>
@@ -46,9 +50,9 @@
 
                     <img class="schedule-image" src="/swampfest-gifs/schedule.gif" alt="Gif of schedule page">
 
-                    <p>
-                    The platform fetches information from an api<br>
-                    and updates the schedule for three different stages<br>
+                    <p class="schedule-p">
+                    The platform fetches information from an api
+                    and updates the schedule for three different stages
                     in real-time.
                     </p>
 
@@ -61,9 +65,9 @@
 
                     <img class="bands-image" src="/swampfest-gifs/bands.gif" alt="Gif of bands page">
 
-                    <p>
-                    You can also find a list of the bands<br>
-                    that will be playing, their image, description<br>
+                    <p class="bands-p">
+                    You can also find a list of the bands
+                    that will be playing, their image, description
                     and band members.
                     </p>
 
@@ -76,9 +80,9 @@
 
                     <img class="tickets-image" src="/swampfest-gifs/ticket1.gif" alt="Gif of ticket step">
 
-                    <p>
-                    The buying flow for tickets consists of 5 steps:<br>
-                    tickets, camping add-ons, ticket-holder-information<br>
+                    <p class="tickets-p">
+                    The buying flow for tickets consists of 5 steps:
+                    tickets, camping add-ons, ticket-holder-information
                     delivery and order review.
                     </p>
 
@@ -91,9 +95,9 @@
 
                     <img class="supabase-image" src="/swampfest-gifs/supabase.png" alt="Supabase image">
 
-                    <p>
-                    The project is connected to Supabase,<br>
-                    so all the information is received<br>
+                    <p class="supabase-p">
+                    The project is connected to Supabase,
+                    so all the information is received
                     in the correct format.
                     </p>
 
@@ -109,9 +113,9 @@
 
                 <div class="process-container">
 
-                    <p>
-                        After doing research on current trends<br>
-                        and famous music festivals,<br>
+                    <p class="process-p">
+                        After doing research on current trends
+                        and famous music festivals,
                         we agreed on the different sections of the website. 
                     </p>
 
@@ -188,14 +192,6 @@ a:visited{
 
 /* TEXT */
 
-p{
-    font-size: 1.5rem;
-    margin: 0rem 0 0 2rem;
-    width: 40rem;
-    height: 50%;
-    line-height: 2;
-    text-align: left;
-}
 
 /* MAIN */
 
@@ -219,7 +215,7 @@ main{
     flex-direction: row;
     align-items: center;
     height: 85vh;
-    width: 900vw;
+    width: 800vw;
     margin: auto 15rem auto 0;
     border-radius: 30px;
     padding: 2rem;
@@ -278,6 +274,16 @@ h1{
     transform: scale(0.8);
 }
 
+.burger-p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 50%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
+}
+
 /* SCHEDULE CONTAINER */
 
 .schedule-container{
@@ -301,6 +307,16 @@ h1{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     transform: scale(0.8);
+}
+
+.schedule-p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 50%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
 }
 
 
@@ -329,6 +345,16 @@ h1{
     transform: scale(0.8);
 }
 
+.bands-p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 50%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
+}
+
 
 /* TICKETS CONTAINER */
 
@@ -353,6 +379,16 @@ h1{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     transform: scale(0.8);
+}
+
+.tickets-p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 50%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
 }
 
 
@@ -381,6 +417,16 @@ h1{
     transform: scale(0.8);
 }
 
+.supabase-p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 50%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
+}
+
 /* PROCESS TITLE */
 
 .process-title{
@@ -396,7 +442,7 @@ h1{
 /* PROCESS CONTAINER */
 
 .process-container{
-    width: 250vw;
+    width: 180vw;
     height: 80vh;
     background-color: transparent;
     border-bottom-left-radius: 30px;
@@ -410,12 +456,22 @@ h1{
     margin: 1rem 0 0rem 0rem;
 }
 
+.process-p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 45ch;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
+}
+
 .process-one-image{
     max-width: 20%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-bottom: 15rem;
+    margin: 0 5rem 10rem 0;
 }
 
 .process-two-image{
@@ -423,7 +479,8 @@ h1{
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-top: 15rem;
+    margin: 10rem 5rem 0rem 0;
+
 }
 
 .process-three-image{
@@ -432,14 +489,331 @@ h1{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     margin-bottom: 15rem;
+    margin: 0rem 5rem 10rem 0;
+
 }
 
 /* LAST SECTION */
 
 .last-section{
+    width: 50vw;
     height: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 0 5rem;
+}
+
+.see-website{
+    transform: scale(2);
+}
+
+.github-link{
+    transform: scale(0.3);
+}
+
+.back-to-projects{
+    transform: scale(2);
+}
+
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    main{
+    width: 100vw;
+    height: auto;
+    color: var(--near-white);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space:initial; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling when needed */
+    overflow-y: auto;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.title-container{
+    width: 90%;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0rem;
+}
+h1{
+    font-size: 5rem;
+    margin: 0 0 2rem 0;
+}
+  .arrow-name{
+    transform: scale(3);
+    margin-left: 0rem;
+    display: none;
+}
+
+.arrow-name-down{
+    transform: scale(3);
+    margin: 3rem 0 0 0;
+    display: inline;
+}
+
+.burger-container{
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.burger-image{
+    max-width: 100%;
+}
+
+
+.burger-p{
+    font-size: 1rem;
+    max-width: 70%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+}
+
+
+/* medieval container */
+
+.schedule-container{
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.schedule-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+.schedule-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
+
+.bands-container{
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.bands-image{
+    max-width: 100%;
+}
+
+
+.bands-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    padding: 0 0 2rem 1rem;
+    margin: 0 auto;
+}
+
+
+.tickets-container{
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.tickets-image{
+    max-width: 100%;
+}
+
+
+.tickets-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    padding: 0 0 2rem 1rem;
+    margin: 0 auto;
+}
+
+.supabase-container{
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.supabase-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+.supabase-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
+
+.process-title{
+    writing-mode: horizontal-tb; /* vertical writing mode, right-to-left */
+    text-orientation: sideways-right; /* characters are upright */
+    font-size: 3rem;
+    opacity: 0.3;
+    margin: 0 5vw;
+    color: white;
+}
+
+.process-container{
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+
+.process-p{
+    font-size: 1rem;
+    margin: 2rem auto;
+    max-width: 70%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
+}
+
+.process-one-image{
+    max-width: 70%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 2rem 13rem 0 0;
+}
+
+.process-two-image{
+    max-width: 70%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 2rem 0 0 15rem;
+
+}
+
+.process-three-image{
+    max-width: 90%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 2rem 0rem 0rem 0;
+}
+
+
+/* LAST SECTION */
+
+.last-section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
@@ -454,6 +828,344 @@ h1{
 
 .back-to-projects{
     transform: scale(2);
+}
+}
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    main{
+    width: 100vw;
+    height: auto;
+    color: var(--near-white);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(17,17,17);
+    white-space:initial; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling when needed */
+    overflow-y: auto;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.title-container{
+    width: 90%;
+    height: 80vh;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0rem;
+}
+h1{
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+}
+  .arrow-name{
+    transform: scale(3);
+    margin-left: 0rem;
+    display: none;
+}
+
+.arrow-name-down{
+    transform: scale(3);
+    margin: 3rem 0 0 0;
+    display: inline;
+}
+
+.burger-container{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.burger-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+
+.burger-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+
+/* medieval container */
+
+.schedule-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.schedule-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+.schedule-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    margin: 3rem auto;
+}
+
+.bands-container{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.bands-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+
+.bands-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+.tickets-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.tickets-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+
+.tickets-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.supabase-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0rem;
+}
+
+.supabase-image{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1);
+}
+
+.supabase-p{
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    padding: 0 0 2rem 1rem;
+    margin: 3rem auto;
+}
+
+.process-title{
+    writing-mode: horizontal-tb; /* vertical writing mode, right-to-left */
+    text-orientation: sideways-right; /* characters are upright */
+    font-size: 3rem;
+    opacity: 0.3;
+    margin: 0 5vw;
+    color: white;
+}
+
+.process-container{
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem auto;
+    padding: 1rem;
+}
+
+.process-p{
+    font-size: 1rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    white-space: normal;
+    height: auto;
+    line-height: 2;
+    text-align: left;
+}
+
+.process-one-image{
+    max-width: 70%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 2rem 5rem 0 0;
+}
+
+.process-two-image{
+    max-width: 70%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 2rem 0 0 5rem;
+
+}
+
+.process-three-image{
+    max-width: 100%;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 2rem 0rem 0rem 3rem;
+}
+
+
+/* LAST SECTION */
+
+.last-section{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.see-website{
+    transform: scale(2);
+}
+
+.github-link{
+    transform: scale(0.3);
+}
+
+.back-to-projects{
+    transform: scale(2);
+}
 }
 
 
