@@ -248,6 +248,12 @@ h1{
     margin-left: 7rem;
 }
 
+.arrow-name-down{
+    transform: scale(6);
+    margin-left: 7rem;
+    display: none;
+}
+
 
 /* BURGER CONTAINER */
 
