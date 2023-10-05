@@ -101,7 +101,9 @@
 
                 <div class="contact-container">
         
-                    <h2 class="contact-title">CONTACT</h2>
+                   <nuxt-link href="mailto:federico.pedro.barbieri@gmail.com" target="_blank"> 
+                        <h2 class="contact-title">CONTACT</h2>
+                    </nuxt-link>
                     <p class="contact-p">Let's get in touch and start something memorable together.</p>
                 
 
@@ -169,7 +171,7 @@ main{
     flex-direction: row;
     align-items: center;
     height: 85vh;
-    width: 550vw;
+    width: 500vw;
     margin: auto 15rem auto 0;
     border-radius: 30px;
     padding: 2rem;
@@ -277,7 +279,8 @@ h2{
 
 .medieval-p{
     font-size: 1.5rem;
-    max-width: 50%;
+    max-width: 40%;
+    line-height: 2;
     height: 50%;
     text-align: left;
     white-space: normal;
