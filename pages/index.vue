@@ -240,7 +240,6 @@ h2{
     max-width: 50%;
     height: 50%;
     line-height: 2;
-    display: flex;
     text-align: left;
     white-space: normal;
 
@@ -273,39 +272,13 @@ h2{
 
 .medieval-p{
     font-size: 1.5rem;
-    max-width: 40%;
+    max-width: 50%;
     line-height: 2;
     height: 50%;
     text-align: left;
     white-space: normal;
 
 }
-
-/* mondrian container */
-.mondrian-container{
-    width: 60vw;
-    height: 70vh;
-    background-color: transparent;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 0rem 10rem;
-    
-}
-
-.mondrian{
-    max-width:60%;
-    height: auto;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-
 
 
 .projects-title{
@@ -406,7 +379,7 @@ h1{
 
 .arrow-name-down{
     transform: scale(3);
-    margin: 0;
+    margin: 2rem 0 0 0;
     display: inline;
 }
 
@@ -428,17 +401,21 @@ h1{
 
 .messi-image{
     max-width: 100%;
+    margin: 0;
 }
 
 
 .messi-p{
     font-size: 1rem;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     line-height: 2;
     display: block;
     text-align: left;
-    padding: 0 0 2rem 1rem;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    white-space: normal;
+
 }
 
 
