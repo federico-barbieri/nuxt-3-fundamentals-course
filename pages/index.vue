@@ -593,7 +593,7 @@ h1{
 
 .arrow-name-down{
     transform: scale(2);
-    margin: 0;
+    margin: 2rem 0 0 0;
     display: inline;
 }
 
@@ -620,13 +620,13 @@ h1{
 
 .messi-p{
     font-size: 1rem;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     line-height: 2;
     display: block;
     text-align: left;
-    padding: 0 0 0rem 2rem;
-    margin: 3rem auto;
+    padding: 0;
+    margin: 0rem auto 2rem auto;
 }
 
 
@@ -644,7 +644,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5rem 0 5rem 0rem;
+    margin: 5rem 0 0rem 0rem;
 }
 
 .medieval-background{
@@ -665,17 +665,17 @@ h1{
     display: block;
     text-align: left;
     padding: 0 0 2rem 1rem;
-    margin: 3rem auto;
+    margin: 3rem auto 0 auto;
 }
   .projects-title {
     writing-mode: horizontal-tb;
     font-size: 3rem;
-    margin: 5rem auto 0 auto;
+    margin: 3rem auto 0 auto;
   }
 
 
   .iconGallery{
-    margin: 5rem auto;
+    margin: 2rem auto;
     width: 100%;
 }
 
@@ -694,7 +694,7 @@ h1{
 
 .contact-container{
     width: 90vw;
-    height: 80vh;
+    height: 30vh;
     background-color: transparent;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -704,18 +704,21 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0rem auto;
+    margin: 2rem auto;
+    border: 1px solid white;
 }
   .contact-title {
     writing-mode: horizontal-tb;
     font-size: 3rem;
-    margin: 5rem auto 0 auto;
+    margin: 0 auto;
   }
 
   .contact-p {
     font-size: 1rem;
-    margin: 1rem 0;
-    width: 95%;
+    margin: 2rem 0 0 0;
+    width: 90%;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
