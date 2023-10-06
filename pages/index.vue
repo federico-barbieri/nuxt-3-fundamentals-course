@@ -86,18 +86,18 @@
                 />
 
                 
-
+            -->
                 <ProjectCard 
                         class="edc" 
                         name="EDC"  
-                        description="Find the house of your dreams, whether it's an urban villa or a cottage in the countryside. <br>Pick your favorites and we will take care of the rest." 
+                        description="Find the house of your dreams, whether it's an urban villa or a cottage in the countryside. Pick your favorites and we will take care of the rest." 
                         :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
                         border_bottom="none"
                         border_top="1px solid white"
-                        margin="10rem 10rem 2rem 2rem"
-                        liveProject="https://vercel.com/federico-barbieri/charlie-tango-case"
+                        margin="10rem 10rem 10rem 2rem"
+                        liveProject="/edc"
                         
-                /> -->
+                />
 
                 <div class="contact-container">
         
