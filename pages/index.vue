@@ -54,8 +54,6 @@
                         name="Advertising" 
                         description="Over the years, I have worked with many different brands in international multimedia campaigns. Take a look at some of my work." 
                         :stack="['/icons/ai.svg', '/icons/ps.svg', '/icons/ae.png']"
-                        border_bottom="1px solid white"
-                        border_top="none"
                         margin="0 10rem 10rem 2rem"
                         liveProject="/advertising"
                 />
@@ -67,8 +65,6 @@
                         name="SwampFest"  
                         description="Experience the first Shrek-themed music festival in the world. Get your tickets, add-ons and much more in this 7-day festival." 
                         :stack="['/icons/nextjs2.png', '/icons/git.png', '/icons/typescript.png']"
-                        border_bottom="none"
-                        border_top="1px solid white"
                         margin="10rem 10rem 2rem 2rem"
                         liveProject="/swampfest"
                 />
@@ -92,8 +88,6 @@
                         name="EDC"  
                         description="Find the house of your dreams, whether it's an urban villa or a cottage in the countryside. Pick your favorites and we will take care of the rest." 
                         :stack="['/icons/xd.svg', '/icons/figma.svg', '/icons/reactjs.svg']"
-                        border_bottom="none"
-                        border_top="1px solid white"
                         margin="10rem 10rem 10rem 2rem"
                         liveProject="/edc"
                         

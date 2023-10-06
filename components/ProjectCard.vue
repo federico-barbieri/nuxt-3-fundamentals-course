@@ -3,7 +3,7 @@
 
         
 
-        <div class="text-side" :style="{ 'border-top': border_top, 'border-bottom': border_bottom}">
+        <div class="text-side">
 
             <h3>{{ name }}</h3>
 
