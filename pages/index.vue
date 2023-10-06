@@ -193,7 +193,7 @@ main{
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
 }
 
@@ -317,7 +317,7 @@ h2{
 .projects-title{
     writing-mode: vertical-rl; /* vertical writing mode, right-to-left */
     text-orientation: upright; /* characters are upright */
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .iconGallery{
