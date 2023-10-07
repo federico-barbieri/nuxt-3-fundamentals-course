@@ -148,7 +148,7 @@ a:visited{
 main{
     width: 100vw;
     height: 85vh;
-    color: var(--near-white);
+    color: white;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
