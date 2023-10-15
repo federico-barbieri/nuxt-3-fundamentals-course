@@ -28,7 +28,7 @@
                     <img class="messi-image" src="/projectImgs/messi.png" alt="Project image">
                     
                     <p class="messi-p">
-                    I'm a multimedia design student at KEA with a focus in frontend design and a background in advertising. 
+                    I'm a Multimedia Designer | Frontend Developer with a background in advertising. 
                     </p>
 
                 </div>    
