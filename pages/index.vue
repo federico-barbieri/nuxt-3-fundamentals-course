@@ -70,19 +70,18 @@
                 />
 
 
-            <!--    <ProjectCard 
+               <ProjectCard 
+                        id="messiverse-project"
                         class="messiverse"  
                         name="Messiverse" 
-                        description="Dive into this personal project where I explore <br>how different painters from history would have <br>recreated Argentina winning the World Cup" 
+                        description="Argentina won the World Cup. Messi completed football. What next? Explore how different painters from history would have recreated this historical event." 
                         :stack="['/icons/vuejs.png', '/icons/vitejs.png', '/icons/openai.png']"
-                        border_bottom="1px solid white"
-                        border_top="none"
                         margin="0 10rem 10rem 2rem"
-                        liveProject="https://messiverse-omega.vercel.app/"
+                        liveProject="/messiverse"
                 />
 
                 
-            -->
+            
                 <ProjectCard 
                         class="edc" 
                         name="EDC"  
