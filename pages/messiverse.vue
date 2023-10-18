@@ -37,9 +37,8 @@
                     <img class="burger-image" src="/messi-ai/magritte/magritte6.png" alt="AI generated painting by Rene Magritte">
                     
                     <p class="burger-p">
-                    After a decade of experience working with international brands,
-                    there is one thing I'm certain: <br><br>
-                    <i>It's not a sprint. It´s a marathon.</i>
+                        This project explores the fascinating concept of how legendary artists from the past 
+                        might have depicted Lionel Messi's triumphant moment of winning the World Cup.
                     </p>
 
                 </div>
@@ -51,9 +50,9 @@
                     <img class="schedule-image" src="/messi-ai/picasso/picasso3.png" alt="AI generated painting by Pablo Picasso">
 
                     <p class="schedule-p">
-                    No two days are the same.
-                    One day can involve coming up with a print ad for an optical shop.
-                    Another day can be about a digital campaign for Volkswagen.
+                        The main inspiration behind this project was to bridge the gap 
+                        between historical art and contemporary sports, 
+                        merging two seemingly unrelated worlds into a captivating visual experience.
                     </p>
 
 
@@ -66,7 +65,7 @@
                     <img class="bands-image" src="/messi-ai/dali/dali5.png" alt="AI generated painting by Salvador Dali">
 
                     <p class="bands-p">
-                    The same can be said about brands.<br>
+                        The result is a series of stunning artworks that embody the essence of each artist's style while immortalizing Lionel Messi's moment of glory on the canvas.
                     
                     </p>
 
@@ -80,7 +79,7 @@
                     <img class="bands-image" src="/messi-ai/bosch/bosch3.png" alt="AI generated painting by Hieronymous Bosch">
 
                     <p class="tickets-p">
-                    Check some of the highlights in my career.
+                        Browse through each artist's gallery of Messi's paintings and read inspiring descriptions that accompany the masterpieces.
                     </p>
 
 
@@ -239,7 +238,7 @@ h1{
 }
 
 .burger-image{
-    max-width: 30%;
+    max-width: 40%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -264,7 +263,7 @@ h1{
 }
 
 .schedule-image{
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -300,7 +299,7 @@ h1{
 }
 
 .bands-image{
-    max-width: 60%;
+    max-width: 40%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -310,10 +309,11 @@ h1{
 .bands-p{
     font-size: 1.5rem;
     margin: 0rem 0 0 2rem;
-    width: 40rem;
+    max-width: 50%;
     height: 50%;
     line-height: 2;
     text-align: left;
+    white-space: normal;
 }
 
 
@@ -335,7 +335,7 @@ h1{
 }
 
 .tickets-image{
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -345,10 +345,11 @@ h1{
 .tickets-p{
     font-size: 1.5rem;
     margin: 0rem 0 0 2rem;
-    width: 40rem;
+    max-width: 50%;
     height: 50%;
     line-height: 2;
     text-align: left;
+    white-space: normal;
 }
 
 
@@ -539,7 +540,8 @@ h1{
     line-height: 2;
     display: block;
     text-align: left;
-    padding: 0 0 2rem 1rem;
+    padding: 0 0 2rem 0rem;
+    margin: 0rem 0 0 0rem;
 }
 
 
@@ -610,7 +612,7 @@ h1{
     height: auto;
     line-height: 2;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 0 0 2rem 1rem;
     margin: 0 auto;
 }
@@ -642,7 +644,7 @@ h1{
     height: auto;
     line-height: 2;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 0 0 2rem 1rem;
     margin: 0 auto;
 }
@@ -763,6 +765,7 @@ h1{
     text-align: left;
     padding: 0 0 2rem 1rem;
     white-space: normal;
+    margin: 0rem 0 0 0rem;
 }
 
 
@@ -834,7 +837,7 @@ h1{
     height: auto;
     line-height: 2;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 0 0 2rem 1rem;
     margin: 2rem auto;
 }
@@ -872,7 +875,7 @@ h1{
     height: auto;
     line-height: 2;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 0;
     margin: 2rem auto;
 }
